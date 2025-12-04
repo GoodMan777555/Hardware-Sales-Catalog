@@ -1,0 +1,768 @@
+{
+    "Dell": {
+        "Latitude 5520": {
+            "type": "Laptop",
+            "cpu": "11th Generation Intel Core i3/i5/i7 Processors (Tiger Lake)",
+            "gpu": "Integrated: Intel Iris Xe Graphics or Intel UHD Graphics. Discrete: NVIDIA GeForce MX450 (2 GB GDDR6).",
+            "sub_model": "11th Gen Intel (Tiger Lake)",
+            "lifecycle": "Supported/Active",
+            "support_os": "Windows 10 (64-bit), Windows 11 (64-bit), Ubuntu 20.04 LTS (64-bit)",
+            "ports": "2x USB 3.2 Gen 1 Type-A (1x with PowerShare), 2x Thunderbolt 4 (USB-C, Power Delivery, DisplayPort), 1x HDMI 2.0, 1x RJ45 Ethernet, 1x Universal audio jack, 1x microSD-card slot, 1x Wedge-shaped lock slot, Optional Smart card reader.",
+            "ram_soldered": "No (Upgradable)",
+            "ram_slots": "2",
+            "ram_type": "DDR4, 3200 MHz",
+            "ram_max": "64 GB (2 x 32 GB)",
+            "storage_slots": "1x M.2 2230/2280 slot for NVMe SSD (PCIe Gen3 x4 or Gen4 x4). Optional 1x 2.5-inch SATA HDD/SSD bay (may be mutually exclusive with certain battery configurations).",
+            "screen_options": "15.6-inch displays: HD (1366x768) 220 nits, FHD (1920x1080) 250 nits, FHD (1920x1080) 400 nits Super Low Power, FHD (1920x1080) touch 250 nits, FHD (1920x1080) 300 nits SafeScreen (Privacy). All anti-glare, 60 Hz.",
+            "webcam": "720p at 30 fps HD RGB Camera, or 720p at 30 fps HD RGB IR Camera (for Windows Hello)",
+            "biometrics": "Optional Fingerprint Reader (integrated into power button), Optional IR Camera (for Windows Hello facial recognition).",
+            "weight": "Starting at 1.59 kg (3.50 lb) for 3-cell battery, M.2 SSD; up to 1.83 kg (4.04 lb) for 4-cell battery, 2.5-inch HDD.",
+            "wifi_bt": "Intel Wi-Fi 6 AX201 (2x2, 802.11ax, Bluetooth 5.1), Intel Wi-Fi 6E AX210 (2x2, 802.11ax, Bluetooth 5.2), or Intel Wi-Fi 6E AX211 (2x2, 802.11ax, Bluetooth 5.2).",
+            "security_tpm": "Discrete TPM 2.0 (FIPS 140-2 Certified, TCG Certified)",
+            "has_wwan": true,
+            "wwan_modules": [
+                {
+                    "module_name": "Dell Wireless DW5821e (Qualcomm Snapdragon X20 LTE-A)",
+                    "part_number": "0X7N41",
+                    "network_speed": "LTE-A Cat 16 (up to 1 Gbps DL, 150 Mbps UL)",
+                    "esim_support": "Yes",
+                    "physical_sim": "Yes",
+                    "tray_pn": "Not readily available as standalone P/N (standard Nano-SIM tray)",
+                    "status": "Available as a factory option, Dell Whitelisted"
+                },
+                {
+                    "module_name": "Dell Wireless DW5930e (Qualcomm Snapdragon X55 Global 5G)",
+                    "part_number": "0V341K (also seen as 0D5D1C)",
+                    "network_speed": "5G NR Sub-6 GHz / LTE-A Pro Cat 22 (up to 7 Gbps DL for 5G, 2.5 Gbps DL for LTE)",
+                    "esim_support": "Yes",
+                    "physical_sim": "Yes",
+                    "tray_pn": "Not readily available as standalone P/N (standard Nano-SIM tray)",
+                    "status": "Available as a factory option, Dell Whitelisted"
+                }
+            ],
+            "sim_slot_type": "Nano-SIM",
+            "has_esim": true,
+            "power_watts": "65W or 90W",
+            "power_connector": "7.4 mm barrel-type or USB-C (Power Delivery)",
+            "power_pn": "Examples: 65W Barrel (0MGJN9, 0GG2WG), 65W USB-C (0K00F5), 90W Barrel (0RN7NW), 90W USB-C (0M0H25)",
+            "battery_info": "3-cell, 42 Wh 'smart' lithium-ion or 4-cell, 63 Wh 'smart' lithium-ion, with ExpressCharge and Extend Cycle-life support.",
+            "expert_notes": "WWAN functionality requires factory-installed antennas; retrofitting can be complex if antennas are missing. Only Dell-whitelisted WWAN modules with specific Dell part numbers are guaranteed to work due to BIOS restrictions. The 2.5-inch storage bay is optional and may not be present with larger batteries or specific configurations. Thermal performance with 11th Gen Intel CPUs can be a consideration under heavy load. Thunderbolt 4 ports provide extensive connectivity options.",
+            "pdf_links": [
+                "[Dell Latitude 5520 Setup and Specifications](https://www.dell.com/support/manuals/en-us/latitude-15-5520-laptop/latitude_5520_setup_specs/specifications?guid=guid-94303328-9107-a37a-6b8015331666&lang=en-us)",
+                "[Dell Latitude 5520 Service Manual](https://www.dell.com/support/manuals/en-us/latitude-15-5520-laptop/latitude_5520_service_manual/before-you-begin?guid=guid-e02c74d8-79c2-4a7f-8d96-c66708605380&lang=en-us)"
+            ]
+        },
+        "Latitude 5490": {
+            "type": "Laptop",
+            "cpu": "Intel Core i3/i5/i7 (7th Gen Dual Core or 8th Gen Quad Core), e.g., i5-8250U, i5-8350U, i7-8650U, i3-7130U, i7-7500U, i5-7300U, i3-8130U",
+            "gpu": "Integrated Intel UHD Graphics 620 or Intel HD Graphics 620; Optional Discrete NVIDIA GeForce MX130 (2GB GDDR5)",
+            "sub_model": "7th/8th Generation Intel Core processors",
+            "lifecycle": "Discontinued/Legacy",
+            "support_os": "Windows 10",
+            "ports": "Headphone/microphone combo jack, 2x USB 3.1 Gen 1, 1x USB 3.1 Gen 1 (PowerShare), 1x HDMI, 1x VGA, 1x USB-C (supports DisplayPort Alt Mode), 1x RJ-45 (LAN), 1x SD 4.0 Memory card reader, Optional Smart Card Reader",
+            "ram_soldered": "No (Upgradable)",
+            "ram_slots": "2 SoDIMM",
+            "ram_type": "DDR4",
+            "ram_max": "32GB",
+            "storage_slots": "1x 2.5-inch bay for HDD/SATA SSD, 1x M.2 2280 slot for SATA/PCIe NVMe SSD, WWAN slot can accept M.2 2242 SATA SSD (not NVMe)",
+            "screen_options": "14-inch HD or Full HD (1920 x 1080) Anti-Glare WVA display with 220 cd/m² brightness; Touch options available",
+            "webcam": "Yes",
+            "biometrics": "Optional Fingerprint Reader, Optional Smart Card Reader, Optional Contactless Card Reader",
+            "weight": "1.59 kg",
+            "wifi_bt": "Wi-Fi 5 (802.11 ac) e.g. Intel Wireless-AC 9462, Intel Wireless-AC 8265, Wireless 1820 DW1820; Bluetooth (v4.1 or v4.2 depending on WLAN card)",
+            "security_tpm": "Dell ControlVault 2 with FIPS 140-2 Level 3 Certification",
+            "has_wwan": true,
+            "wwan_modules": [
+                {
+                    "module_name": "Sierra Wireless 5811E (DW5811e) M.2 Mobile Broadband",
+                    "part_number": "27F80, MR7VT, K9CNF",
+                    "network_speed": "4G LTE",
+                    "esim_support": "No",
+                    "physical_sim": "Yes",
+                    "tray_pn": "N/A (Integrated with chassis)",
+                    "status": "Available/Compatible"
+                },
+                {
+                    "module_name": "Sierra Wireless 5816E (DW5816e) M.2 Mobile Broadband",
+                    "part_number": "8XNMF",
+                    "network_speed": "4G LTE",
+                    "esim_support": "No",
+                    "physical_sim": "Yes",
+                    "tray_pn": "N/A (Integrated with chassis)",
+                    "status": "Available/Compatible"
+                },
+                {
+                    "module_name": "Foxconn DW5821e",
+                    "part_number": "N/A (listed as 'Modem WWAN LTE 4G DW5821e')",
+                    "network_speed": "4G LTE",
+                    "esim_support": "No",
+                    "physical_sim": "Yes",
+                    "tray_pn": "N/A (Integrated with chassis)",
+                    "status": "Available/Compatible"
+                }
+            ],
+            "sim_slot_type": "Nano-SIM",
+            "has_esim": false,
+            "power_watts": "45W, 65W, or 90W",
+            "power_connector": "7.4mm barrel plug or USB-C (for 45W adapter)",
+            "power_pn": "G4X7T (65W, 7.4mm), Y4M8K (90W, 7.4mm), X2GC2 (45W, USB-C), 4C7N4 (45W)",
+            "battery_info": "3-cell (42Wh, 51Wh) or 4-cell (68Wh) Li-ion. P/Ns: GD1JP (4-cell, 68Wh, Type GJKNX), 45N3J (3-cell, 42Wh, Type 3DDDG), 4YFVG (3-cell, 51Wh, Type 93FTF), D4CMT (3-cell, 51Wh, Type 93FTF).",
+            "expert_notes": "The WWAN slot can accept M.2 2242 SATA SSDs, but not NVMe SSDs, and may not be detected by BIOS in some configurations. Antennas for WWAN might not be present if the laptop did not ship with a WWAN card, and installing them can be difficult. Dell Latitude 5290/5490/5590 models do NOT support the Dell Thunderbolt Dock TB16. [cite: 7 in 1st step search]",
+            "pdf_links": [
+                "(https://files.bbystatic.com/2W5TUqg0WabbjXviL5WaCw%3D%3D/71183bd8-6229-4dd3-baee-662edff8f5fa.pdf)"
+            ]
+        }
+    },
+    "Lenovo": {
+        "ThinkPad P15s Gen 2": {
+            "type": "Laptop",
+            "cpu": "11th Generation Intel Core i5 / i7 Processors (e.g., i7-1185G7, i7-1165G7, i5-1145G7, i5-1135G7)",
+            "gpu": "Intel Iris Xe Graphics (Integrated) & NVIDIA T500 (4GB GDDR6) (Discrete)",
+            "sub_model": "Gen 2",
+            "lifecycle": "Supported",
+            "support_os": "Windows 11 Pro/Home, Windows 10 Pro/Home, Red Hat Enterprise Linux (certified), Ubuntu (certified)",
+            "ports": "2x USB 3.2 Gen 1 (one Always On), 2x Thunderbolt 4 / USB4 40Gbps (supports data transfer, Power Delivery 3.0 and DisplayPort 1.4a), 1x HDMI 2.0, 1x Ethernet (RJ-45), 1x Headphone / microphone combo jack (3.5mm), 1x Smart card reader (optional), 1x Nano-SIM card slot (WWAN models)",
+            "ram_soldered": "Partial (1 Slot + Soldered)",
+            "ram_slots": "1",
+            "ram_type": "DDR4-3200",
+            "ram_max": "48GB (16GB soldered + 1x 32GB SODIMM)",
+            "storage_slots": "1x M.2 2280 PCIe Gen 4x4 SSD slot (up to 2TB)",
+            "screen_options": "15.6\" FHD (1920x1080) IPS, anti-glare, 300 nits; 15.6\" FHD (1920x1080) IPS, anti-glare, 300 nits, touch; 15.6\" FHD (1920x1080) IPS, anti-glare, 500 nits, Low Power, X-Rite Factory Color Calibration; 15.6\" UHD (3840x2160) IPS, anti-glare, 600 nits, HDR400, X-Rite Factory Color Calibration",
+            "webcam": "HD 720p with ThinkShutter / HD 720p + IR with ThinkShutter",
+            "biometrics": "Touch style Fingerprint Reader (match-on-chip), IR Camera for Windows Hello",
+            "weight": "Starting at 1.75 kg (3.86 lbs)",
+            "wifi_bt": "Intel Wi-Fi 6E AX210, 802.11ax 2x2 Wi-Fi + Bluetooth 5.2 (or Intel Wi-Fi 6 AX201, 802.11ax 2x2 Wi-Fi + Bluetooth 5.2)",
+            "security_tpm": "Discrete TPM 2.0 (TCG certified)",
+            "has_wwan": true,
+            "wwan_modules": [
+                {
+                    "module_name": "Fibocom L850-GL",
+                    "part_number": "01AX792 (FRU)",
+                    "network_speed": "4G LTE CAT9",
+                    "esim_support": "No",
+                    "physical_sim": "Yes",
+                    "tray_pn": "N/A - Integrated into chassis",
+                    "status": "Available (requires WWAN antennas if not pre-installed)"
+                },
+                {
+                    "module_name": "Fibocom L860-GL",
+                    "part_number": "02HK712 (FRU)",
+                    "network_speed": "4G LTE CAT16",
+                    "esim_support": "Yes",
+                    "physical_sim": "Yes",
+                    "tray_pn": "N/A - Integrated into chassis",
+                    "status": "Available (requires WWAN antennas if not pre-installed)"
+                }
+            ],
+            "sim_slot_type": "Nano-SIM",
+            "has_esim": true,
+            "power_watts": "65W USB-C (standard) / 95W USB-C (for models with NVIDIA T500)",
+            "power_connector": "USB-C",
+            "power_pn": "Not specified, uses standard Lenovo USB-C power adapters compatible with listed wattage.",
+            "battery_info": "Integrated Li-Polymer 57Wh battery",
+            "expert_notes": "WWAN functionality requires the installation of a compatible WWAN module and may require a separate WWAN antenna kit if the laptop was not originally configured for WWAN. The system has 16GB of RAM soldered to the motherboard, with one SODIMM slot for expansion. Only one M.2 2280 SSD slot is available for storage.",
+            "pdf_links": [
+                "[ThinkPad P15s Gen 2 (Intel) PSREF](https://psref.lenovo.com/Product/ThinkPad/ThinkPad_P15s_Gen_2_Intel)",
+                "[ThinkPad P15s Gen 2 / T15 Gen 2 Hardware Maintenance Manual (HMM)](https://download.lenovo.com/pccbbs/mobiles_pdf/p15s_gen2_t15_gen2_hmm_en.pdf)"
+            ]
+        },
+        "ThinkCentre M920q Tiny": {
+            "type": "Mini PC",
+            "cpu": "Intel 8th Generation Core i3/i5/i7 (e.g., i5-8500T, i7-8700T)",
+            "gpu": "Intel UHD Graphics 630 (Integrated)",
+            "sub_model": "N/A (Specific generation based on CPU, generally 2018-2020)",
+            "lifecycle": "End of Life / Discontinued (Replaced by newer generations)",
+            "support_os": "Windows 10, potentially Windows 11 via compatibility checks",
+            "ports": "USB 3.1 Gen 1 (Type-A & Type-C), HDMI, DisplayPort, Ethernet (RJ-45), Audio combo jack, Optional Serial port or second video out.",
+            "ram_soldered": "No (Upgradable)",
+            "ram_slots": "2 SODIMM slots",
+            "ram_type": "DDR4-2666MHz SO-DIMM",
+            "ram_max": "64GB (Verified via PSREF)",
+            "storage_slots": "1x M.2 2280 (PCIe NVMe or SATA) and/or 1x 2.5\" SATA drive bay (optional)",
+            "screen_options": "N/A (Desktop/Mini PC)",
+            "webcam": "N/A (External only)",
+            "biometrics": "Optional Fingerprint Reader (FPR) as a top cover accessory.",
+            "weight": "Approx. 1.32 kg (2.91 lbs)",
+            "wifi_bt": "Optional - Intel Wireless-AC (e.g., 9560/9260, dual band)  ",
+            "security_tpm": "TPM 2.0 (Infineon or GigaDevice)",
+            "has_wwan": false,
+            "wwan_modules": [],
+            "sim_slot_type": "N/A (WWAN not supported natively)",
+            "has_esim": false,
+            "power_watts": "65W or 90W (dependent on CPU TDP)",
+            "power_connector": "External AC Adapter (Slim Tip Connector)",
+            "power_pn": "Varies, typically 01AJ936, 00PC772 (for 65W/90W variants)",
+            "battery_info": "No internal battery (Desktop/Mini PC)",
+            "expert_notes": "",
+            "pdf_links": [
+                "(https://psref.lenovo.com/syspool/Sys/PDF/ThinkCentre/ThinkCentre_M920_Tiny/ThinkCentre_M920_Tiny_Spec.PDF)"
+            ]
+        },
+        "ThinkCentre M720q Tiny": {
+            "type": "Mini PC",
+            "cpu": "Intel 8th Gen Core i3/i5/i7 (e.g., i5-8400T, i7-8700T)",
+            "gpu": "Integrated: Intel UHD Graphics 630",
+            "sub_model": "2nd Gen (2019)",
+            "lifecycle": "Discontinued/End of Life (EOL)",
+            "support_os": "Windows 10/11, Linux (Check PSREF for specific versions)",
+            "ports": "Front: 2x USB 3.1 Gen 1 (one is always on), 1x USB 3.1 Type-C Gen 1, Headphone/mic combo. Rear: 4x USB 3.1 Gen 1, HDMI, DisplayPort, RJ45 Ethernet, Optional Serial Port/VGA/DP/HDMI.",
+            "ram_soldered": "No (Upgradable)",
+            "ram_slots": "2 x SO-DIMM slots",
+            "ram_type": "DDR4-2666 (PC4-21300)",
+            "ram_max": "Up to 64GB (Verified via PSREF for similar Tiny models, although 32GB is often the practical limit for 8th Gen)",
+            "storage_slots": "1 x M.2 2280 slot (for SSD/nvme) AND 1 x optional  2.5-inch bay (for HDD/SSD via adapter cable) ,need caddy",
+            "screen_options": "N/A (Desktop)",
+            "webcam": "N/A (Optional USB/External)",
+            "biometrics": "N/A (Desktop)",
+            "weight": "Approx. 1.32 kg (2.91 lbs)",
+            "wifi_bt": "Optional - Intel Dual Band Wireless-AC 9260 (or similar M.2 2230 card)",
+            "security_tpm": "TPM 2.0 Chip",
+            "has_wwan": false,
+            "wwan_modules": [],
+            "sim_slot_type": "Nano-SIM",
+            "has_esim": false,
+            "power_watts": "65W or 90W (depending on CPU configuration)",
+            "power_connector": "External AC Adapter (Standard Lenovo slim tip)",
+            "power_pn": "ADLX65YCC3A (65W) or ADLX90YCC3A (90W) - check specific region/adapter type",
+            "battery_info": "No internal battery (Desktop Mini)",
+            "expert_notes": "",
+            "pdf_links": [
+                "(https://psref.lenovo.com/syspool/Sys/PDF/ThinkCentre/ThinkCentre_M720_Tiny/ThinkCentre_M720_Tiny_Spec.pdf)"
+            ]
+        },
+        "ThinkPad X1 Yoga Gen 6": {
+            "type": "Laptop",
+            "cpu": "Intel Core i5/i7 (11th Generation - Tiger Lake UP3)",
+            "gpu": "Integrated Intel Iris Xe Graphics",
+            "sub_model": "2021 (Type 20XY, 20XZ)",
+            "lifecycle": "Active/Discontinued (Check specific configuration date)",
+            "support_os": "Windows 10 Pro / Windows 11 Pro (Upgradable/Preloaded)",
+            "ports": "2x Thunderbolt 4 / USB 4.0 (Type-C), 2x USB 3.2 Gen 1 Type-A (one always on), 1x HDMI 2.0, 3.5mm Combo Audio Jack, Optional Nano-SIM slot.",
+            "ram_soldered": "No (Upgradable)",
+            "ram_slots": "0 (Soldered)",
+            "ram_type": "LPDDR4x-4266MHz",
+            "ram_max": "32GB (Fixed)",
+            "storage_slots": "1x M.2 2242/2280 slot (PCIe NVMe Gen 4)",
+            "screen_options": "14-inch, 16:10 aspect ratio, Options include: 1920x1200 (FHD+), 2880x1800 (WQUXGA) or 2240x1440 (WQHD+), various brightness/touch/privacy options.",
+            "webcam": "IR (optional)& 720p Hybrid with Privacy Shutter (ThinkShutter)",
+            "biometrics": "Touch FPR (Fingerprint Reader) and IR Camera for Windows Hello",
+            "weight": "Starting at 2.78 lbs (1.27 kg)",
+            "wifi_bt": "Intel Wi-Fi 6E AX210 (802.11ax, 2x2) + Bluetooth 5.2",
+            "security_tpm": "dTPM 2.0 Chip",
+            "has_wwan": true,
+            "wwan_modules": [
+                {
+                    "module_name": null,
+                    "part_number": "5W10V25859",
+                    "network_speed": null,
+                    "esim_support": null,
+                    "physical_sim": null,
+                    "tray_pn": null,
+                    "status": null
+                },
+                {
+                    "module_name": null,
+                    "part_number": "5W10V25816",
+                    "network_speed": null,
+                    "esim_support": null,
+                    "physical_sim": null,
+                    "tray_pn": null,
+                    "status": null
+                },
+                {
+                    "module_name": null,
+                    "part_number": "5W10V25771",
+                    "network_speed": null,
+                    "esim_support": null,
+                    "physical_sim": null,
+                    "tray_pn": null,
+                    "status": null
+                },
+                {
+                    "module_name": null,
+                    "part_number": "5W10V25768",
+                    "network_speed": null,
+                    "esim_support": null,
+                    "physical_sim": null,
+                    "tray_pn": null,
+                    "status": null
+                },
+                {
+                    "module_name": null,
+                    "part_number": "5W10V25820",
+                    "network_speed": null,
+                    "esim_support": "Yes",
+                    "physical_sim": null,
+                    "tray_pn": null,
+                    "status": null
+                }
+            ],
+            "sim_slot_type": "Nano-SIM",
+            "has_esim": true,
+            "power_watts": "65W",
+            "power_connector": "USB Type-C (Slim Tip)",
+            "power_pn": "ADLX65YCC3A or similar 65W USB-C adapter",
+            "battery_info": "Integrated 57Wh battery",
+            "expert_notes": "This model uses LPDDR4x RAM which is soldered to the motherboard, making RAM upgrades impossible. WWAN compatibility is highly dependent on the specific BIOS whitelist and WWAN module installed at the factory or purchased as an official FRU. Ensure the required antennas are present if installing WWAN post-purchase.",
+            "pdf_links": [
+                "https://psref.lenovo.com/Product/ThinkPad/ThinkPad_X1_Yoga_Gen_6"
+            ]
+        },
+        "ThinkPad X1 Carbon Gen 9 ": {
+            "type": "Laptop",
+            "cpu": "Intel 11th Gen Core i5/i7 (Tiger Lake)",
+            "gpu": "Integrated Intel Iris Xe Graphics",
+            "sub_model": "Gen 9 (2021)",
+            "lifecycle": "Active/End of Life (Check specific configuration)",
+            "support_os": "Windows 10/11 (Verify specific image)",
+            "ports": "2x USB 3.2 Gen 1 (1 Always On), 2x Thunderbolt 4 (USB4 40Gbps, support PD 3.0, DP 1.4), HDMI 2.0b, Headphone/Mic combo jack, Optional Nano-SIM slot.",
+            "ram_soldered": "No (Upgradable)",
+            "ram_slots": "0 (Soldered)",
+            "ram_type": "LPDDR4x",
+            "ram_max": "32GB",
+            "storage_slots": "1x M.2 2242/2280 slot (NVMe PCIe 4.0 x4)",
+            "screen_options": "14.0\" 16:10, resolutions including 1920x1200 (FHD+), 2560x1600 (WQHD+), 3840x2400 (4K UHD+), various brightness/touch options.",
+            "webcam": "IR & 720p/1080p with ThinkShutter privacy cover (optional)",
+            "biometrics": "Touch Style Fingerprint Reader (FPR) and/or IR Camera for Facial Recognition",
+            "weight": "Starts at 1.12 kg (2.47 lbs)",
+            "wifi_bt": "Intel AX201 or AX210 (Wi-Fi 6 or 6E) and Bluetooth 5.1/5.2",
+            "security_tpm": "Discrete Trusted Platform Module (dTPM) 2.0",
+            "has_wwan": true,
+            "wwan_modules": [
+                {
+                    "module_name": null,
+                    "part_number": "5W11H85378",
+                    "network_speed": null,
+                    "esim_support": null,
+                    "physical_sim": null,
+                    "tray_pn": null,
+                    "status": null
+                },
+                {
+                    "module_name": null,
+                    "part_number": "5W10V25816",
+                    "network_speed": null,
+                    "esim_support": null,
+                    "physical_sim": null,
+                    "tray_pn": null,
+                    "status": null
+                },
+                {
+                    "module_name": null,
+                    "part_number": "5W10V25771",
+                    "network_speed": null,
+                    "esim_support": null,
+                    "physical_sim": null,
+                    "tray_pn": null,
+                    "status": null
+                },
+                {
+                    "module_name": null,
+                    "part_number": "5W10V25794",
+                    "network_speed": null,
+                    "esim_support": null,
+                    "physical_sim": null,
+                    "tray_pn": null,
+                    "status": null
+                },
+                {
+                    "module_name": null,
+                    "part_number": "5W10V25768",
+                    "network_speed": null,
+                    "esim_support": null,
+                    "physical_sim": null,
+                    "tray_pn": null,
+                    "status": null
+                },
+                {
+                    "module_name": null,
+                    "part_number": "5W10V25821",
+                    "network_speed": null,
+                    "esim_support": "Yes",
+                    "physical_sim": null,
+                    "tray_pn": null,
+                    "status": null
+                }
+            ],
+            "sim_slot_type": "Nano-SIM / eSIM",
+            "has_esim": true,
+            "power_watts": "65W",
+            "power_connector": "USB-C (Thunderbolt 4)",
+            "power_pn": "ADLX65YCC2A or similar (Check specific region/wattage)",
+            "battery_info": "57Wh Internal Battery",
+            "expert_notes": "The X1 Carbon Gen 9 switched to a 16:10 aspect ratio screen. WWAN M.2 slot configuration (including required antennas) must be verified against the specific FRU/MTM before ordering parts. RAM is soldered, making upgrades impossible.",
+            "pdf_links": [
+                "[Lenovo PSREF X1 Carbon Gen 9](https://psref.lenovo.com/Product/ThinkPad/ThinkPad_X1_Carbon_Gen_9)"
+            ]
+        },
+        "ThinkPad T14s Gen 1": {
+            "type": "Laptop",
+            "cpu": "Up to 10th Gen Intel Core i7 processor / Up to AMD Ryzen 7 Pro processors",
+            "gpu": "Intel UHD Graphics (integrated) / AMD Radeon Graphics (integrated)",
+            "sub_model": "",
+            "lifecycle": "Production",
+            "support_os": "Windows 10 Pro, Windows 10 Home, Linux, Ubuntu Linux",
+            "ports": "2x USB 3.1 Gen 1 (one Always On), 1x USB-C 3.1 Gen 1 (power delivery and DisplayPort), 1x USB-C 3.1 Gen 2 / Thunderbolt 3 (power delivery and DisplayPort), HDMI 2.0,  microphone combo jack",
+            "ram_soldered": "Yes (Soldered)",
+            "ram_slots": "Memory soldered to systemboard, no slots",
+            "ram_type": "DDR4-2666 (Intel) / DDR4-3200 (AMD)",
+            "ram_max": "32GB (soldered)",
+            "storage_slots": "One drive, up to 2TB M.2 2280 SSD  NVMe, PCIe 3.0 x4",
+            "screen_options": "14.0\" FHD (1920x1080) IPS, 250/300/400/500 nits / 14.0\" UHD (3840x2160) IPS 500nits",
+            "webcam": "720p with ThinkShutter/IR & HD 720p hybrid",
+            "biometrics": "Fingerprint Reader (optional) / IR camera for Windows Hello (optional)",
+            "weight": "Starting at 1.27 kg (2.81 lbs)",
+            "wifi_bt": "Intel AX201 11ax, 2x2 + BT5.0 / Intel AX200 11ax, 2x2 + BT5.1 / Mediatek Wi-Fi 6 MT7921, 802.11ax 2x2 Wi-Fi + Bluetooth 5.1 / Realtek Wi-Fi 6 RTL8852AE, 802.11ax Dual Band 2x2 Wi-Fi + Bluetooth 5.1",
+            "security_tpm": "Firmware TPM 2.0 integrated in chipset / Discrete TPM 2.0, TCG certified",
+            "has_wwan": true,
+            "wwan_modules": [
+                {
+                    "module_name": null,
+                    "part_number": "02HK712",
+                    "network_speed": null,
+                    "esim_support": null,
+                    "physical_sim": null,
+                    "tray_pn": " 01YU004",
+                    "status": null
+                },
+                {
+                    "module_name": null,
+                    "part_number": "01AX792",
+                    "network_speed": null,
+                    "esim_support": null,
+                    "physical_sim": null,
+                    "tray_pn": " 01YU004",
+                    "status": null
+                },
+                {
+                    "module_name": null,
+                    "part_number": "5W10V25790",
+                    "network_speed": null,
+                    "esim_support": "Yes",
+                    "physical_sim": null,
+                    "tray_pn": " 01YU004",
+                    "status": null
+                }
+            ],
+            "sim_slot_type": "Nano-SIM / eSIM",
+            "has_esim": true,
+            "power_watts": "45W/65W",
+            "power_connector": "USB-C",
+            "power_pn": "ADLX65YCC2D, ADLX65YLC2D, ADLX65YDC2D, adlx65ylc3a, adl65ydc3a, adlx65yac3a, adlx65ycc3a",
+            "battery_info": "57Wh, 3-cell lithium-polymer",
+            "expert_notes": "RAM is soldered and not upgradable. WWAN is optional. The Intel version has Thunderbolt 3, while the AMD version has HDMI 2.0",
+            "pdf_links": [
+                "(https://psref.lenovo.com/syspool/Sys/PDF/ThinkPad/ThinkPad_T14s_Gen_1_Intel/ThinkPad_T14s_Gen_1_Intel_Spec.pdf"
+            ]
+        },
+        "ThinkPad X1 Carbon Gen 8": {
+            "type": "Laptop",
+            "cpu": "Up to 10th Gen Intel Core i7 processor (e.g., Core i5-10210U, Core i5-10310U, Core i7-10510U, Core i7-10610U)",
+            "gpu": "Integrated Intel UHD Graphics",
+            "sub_model": "",
+            "lifecycle": "Withdrawn (for some configurations)",
+            "support_os": "Windows 10 Pro",
+            "ports": "2x USB 3.2 Gen 1 (one Always On), 2x USB-C 3.2 Gen 2 / Thunderbolt™ 3 (support data transfer, Power Delivery 3.0 and DisplayPort™ 1.2), 1x HDMI 1.4b,  1x Nano-SIM card slot (WWAN models only), 1x Headphone / microphone combo jack (3.5mm), 1x Side docking connector, 1x Kensington® Security Slot™'",
+            "ram_soldered": "Yes (Soldered)",
+            "ram_slots": "0",
+            "ram_type": "LPDDR3-2133",
+            "ram_max": "16GB soldered memory, not upgradable",
+            "storage_slots": "One M.2 2280 slot for NVMe PCIe SSD, up to 2TB",
+            "screen_options": "['14.0” 4K (3840x2160) Dolby Vision™ HDR, WVA, 1500:1 contrast, 90% gamut, 500 nits', '14.0” WQHD (2560x1440), WVA, 1000:1 contrast, 72% gamut, 300 nits', '14.0” FHD (1920x1080) PrivacyGuard, WVA, 1500:1 contrast, 72% gamut, 500 nits (touch)', '14.0” FHD (1920x1080), WVA, 700:1 contrast, 72% gamut, 400 nits (touch)', '14.0\" FHD (1920x1080) IPS 400nits Anti-glare']",
+            "webcam": "HD 720p with ThinkShutter, optional IR camera for facial recognition",
+            "biometrics": "Touch style fingerprint reader on palm rest (match-on-chip), optional IR camera for facial recognition",
+            "weight": "Starting at 1.09 kg (2.4 lbs)",
+            "wifi_bt": "Intel AX201 11ax, 2x2 + Bluetooth 5.2",
+            "security_tpm": "Firmware TPM 2.0 integrated in chipset / Discrete TPM 2.0",
+            "has_wwan": true,
+            "wwan_modules": [
+                {
+                    "module_name": null,
+                    "part_number": "02HK712",
+                    "network_speed": null,
+                    "esim_support": null,
+                    "physical_sim": null,
+                    "tray_pn": null,
+                    "status": null
+                },
+                {
+                    "module_name": null,
+                    "part_number": "02HK709",
+                    "network_speed": null,
+                    "esim_support": null,
+                    "physical_sim": null,
+                    "tray_pn": null,
+                    "status": null
+                },
+                {
+                    "module_name": null,
+                    "part_number": "5W10V25794",
+                    "network_speed": null,
+                    "esim_support": null,
+                    "physical_sim": null,
+                    "tray_pn": null,
+                    "status": null
+                },
+                {
+                    "module_name": null,
+                    "part_number": "5W10V25790",
+                    "network_speed": null,
+                    "esim_support": null,
+                    "physical_sim": null,
+                    "tray_pn": null,
+                    "status": null
+                }
+            ],
+            "sim_slot_type": "Nano-SIM",
+            "has_esim": false,
+            "power_watts": "45W or 65W",
+            "power_connector": "USB-C",
+            "power_pn": "65W: 5A10W86253-BTI (example, BTI branded), 45W: Not explicitly specified in PSREF, generic Lenovo 45W USB-C adapters are compatible",
+            "battery_info": "Integrated 51Wh, up to 19.5 hours (MobileMark 2014)",
+            "expert_notes": "RAM is soldered to the systemboard and is not upgradable. The WWAN module is an M.2 4G/LTE card. Upgrading to a 5G WWAN module from Gen 8 4G is unlikely without also replacing the antenna and potentially encountering software/firmware compatibility issues due to different motherboard chipsets.",
+            "pdf_links": [
+                "(https://psref.lenovo.com/syspool/Sys/PDF/ThinkPad/ThinkPad_X1_Carbon_Gen_8/ThinkPad_X1_Carbon_Gen_8_Spec.PDF)"
+            ]
+        },
+        "ThinkBook 14s Yoga ITL": {
+            "type": "Laptop",
+            "cpu": "Intel Core i5-1135G7 / i7-1165G7 (11th Gen)",
+            "gpu": "Intel Iris Xe Graphics",
+            "sub_model": "ITL",
+            "lifecycle": "Withdrawn",
+            "support_os": "Windows 10 Pro/Home, Windows 11 Pro/Home",
+            "ports": "['2 x USB 3.2 Gen 1', '1 x USB 3.2 Gen 2 (Supports DisplayPort and 65 W Power Delivery)', '1 x Thunderbolt 4 (Supports DisplayPort and 65 W Power Delivery)', 'HDMI 1.4', 'MicroSD card reader', 'Headphone / microphone combo jack (3.5mm)']",
+            "ram_soldered": "Partial (1 Slot + Soldered)",
+            "ram_slots": "1 (soldered) + 1 SO-DIMM",
+            "ram_type": "DDR4-3200",
+            "ram_max": "40GB (8GB soldered + 32GB SO-DIMM)",
+            "storage_slots": "Up to two drives, 2x M.2 SSD",
+            "screen_options": "14\" FHD (1920x1080) IPS, Touchscreen, 300nits, 100% sRGB, Dolby Vision",
+            "webcam": "720p with ThinkShutter",
+            "biometrics": "Fingerprint Reader",
+            "weight": "Starting at 1.5 kg (3.3 lbs)",
+            "wifi_bt": "Wi-Fi 6 11ax, 2x2 + BT5.1",
+            "security_tpm": "Discrete TPM 2.0",
+            "has_wwan": false,
+            "wwan_modules": [],
+            "sim_slot_type": "eSIM",
+            "has_esim": false,
+            "power_watts": "65W",
+            "power_connector": "USB-C (3-pin)",
+            "power_pn": "Unknown",
+            "battery_info": "Integrated 60Wh",
+            "expert_notes": "The ThinkBook 14s Yoga ITL is a 2-in-1 laptop designed for business and creative use, featuring a touchscreen and 360-degree hinge. It has a 14-inch FHD IPS display, Intel Core i5 or i7 processors, and Intel Iris Xe Graphics. It supports up to 40GB of RAM and has two M.2 SSD slots. It includes a ThinkBook Yoga Integrated Smart Pen",
+            "pdf_links": [
+                "(https://psref.lenovo.com/syspool/Sys/PDF/ThinkBook/ThinkBook_14s_Yoga_ITL/ThinkBook_14s_Yoga_ITL_Spec.pdf)"
+            ]
+        },
+        "ThinkPad T14 Gen 2i": {
+            "type": "Laptop",
+            "cpu": "Up to 11th Gen Intel Core i7-1185G7 vPro (options include Intel Core i5-1135G7, i7-1165G7)",
+            "gpu": "Integrated Intel Iris Xe Graphics (functions as UHD Graphics on i5/single-channel RAM configurations), Optional NVIDIA GeForce MX450 2GB GDDR6",
+            "sub_model": "Gen 2 (Intel)",
+            "lifecycle": "Active",
+            "support_os": "Windows 10 Pro 64, Windows 11 Pro 64",
+            "ports": "['2x Thunderbolt 4 (USB-C)', '2x USB-A 3.2 Gen 1 (one Always On)', '1x HDMI 2.0', '1x Headphone / microphone combo jack (3.5mm)', '1x MicroSD Card Reader', '1x Ethernet (RJ-45)', '1x Side docking connector', 'Optional Smart card reader']",
+            "ram_soldered": "Partial (1 Slot + Soldered)",
+            "ram_slots": "One memory soldered to systemboard, one DDR4 SO-DIMM slot",
+            "ram_type": "DDR4-3200",
+            "ram_max": "Up to 48GB (16GB soldered + 32GB SO-DIMM)",
+            "storage_slots": "One M.2 2280 PCIe Gen 3x4 slot, supports M.2 2242/2280 SSD (up to 2TB M.2 2280 SSD or 128GB M.2 2242 SSD)",
+            "screen_options": "['14\" UHD (3840x2160) IPS 500nits Anti-glare, HDR 400, Dolby Vision™', '14\" FHD (1920x1080) Low Power IPS 400nits Anti-glare', '14\" FHD (1920x1080) IPS 300nits Anti-glare', '14\" FHD (1920x1080) IPS 500nits, PrivacyGuard with PrivacyAlert (touch optional)']",
+            "webcam": "IR (optional) & HD 720p with Privacy Shutter",
+            "biometrics": "Optional Fingerprint Reader (Touch style, match-on-chip or FIPS 201), Optional IR camera for facial recognition (Windows Hello)",
+            "weight": "Starting at 1.47 kg (3.24 lbs)",
+            "wifi_bt": "Intel Wi-Fi 6E AX210 / Wi-Fi 6 AX201, 2x2, Bluetooth 5.2",
+            "security_tpm": "Discrete TPM 2.0, TCG certified",
+            "has_wwan": true,
+            "wwan_modules": [
+                {
+                    "module_name": null,
+                    "part_number": "5W10V25822",
+                    "network_speed": null,
+                    "esim_support": null,
+                    "physical_sim": null,
+                    "tray_pn": "02HK996 ",
+                    "status": null
+                },
+                {
+                    "module_name": null,
+                    "part_number": "5W10V25820",
+                    "network_speed": null,
+                    "esim_support": "Yes",
+                    "physical_sim": null,
+                    "tray_pn": "02HK996 ",
+                    "status": null
+                },
+                {
+                    "module_name": null,
+                    "part_number": "5W10V25859",
+                    "network_speed": null,
+                    "esim_support": null,
+                    "physical_sim": null,
+                    "tray_pn": "02HK996 ",
+                    "status": null
+                },
+                {
+                    "module_name": null,
+                    "part_number": "5W10V25815",
+                    "network_speed": null,
+                    "esim_support": null,
+                    "physical_sim": null,
+                    "tray_pn": "02HK996 ",
+                    "status": null
+                },
+                {
+                    "module_name": null,
+                    "part_number": "5W10V25816",
+                    "network_speed": null,
+                    "esim_support": null,
+                    "physical_sim": null,
+                    "tray_pn": "02HK996 ",
+                    "status": null
+                },
+                {
+                    "module_name": null,
+                    "part_number": "5W10V25794",
+                    "network_speed": null,
+                    "esim_support": null,
+                    "physical_sim": null,
+                    "tray_pn": "02HK996 ",
+                    "status": null
+                }
+            ],
+            "sim_slot_type": "Nano-SIM / eSIM",
+            "has_esim": true,
+            "power_watts": "65W",
+            "power_connector": "USB-C",
+            "power_pn": "Compatible part numbers: 4X20M26272, 4X20M26268, 01FR024, 01FR025, 01FR030, 02DL155, ADLX65YDC3A, ADLX65YLC3A, ADLX65YSDC3A, ADLX65YSCC3A, SA10M13945, SA10R16897, SA10R16901, GX20P92530",
+            "battery_info": "Integrated 50Wh, supports Rapid Charge",
+            "expert_notes": "WWAN modules require whitelisting by Lenovo BIOS. Some RAM is soldered to the systemboard. Specific port availability may vary by model configuration. Intel Iris Xe Graphics capability requires system to be configured with dual-channel memory; with single-channel memory, Intel Iris Xe Graphics will function as Intel UHD Graphics. WWAN is NOT available for aluminium models. Smart card reader is NOT available with FIPS 201 fingerprint reader and anti-microbial covers.",
+            "pdf_links": [
+                "(https://psref.lenovo.com/syspool/Sys/PDF/ThinkPad/ThinkPad_T14_Gen_2_Intel/ThinkPad_T14_Gen_2_Intel_Spec.pdf)"
+            ]
+        },
+        "ThinkPad T14s Gen 3": {
+            "type": "Laptop",
+            "cpu": "AMD Ryzen™ 5/7 PRO Series or 12th Generation Intel Core i5/i7 Processor",
+            "gpu": "Integrated AMD Radeon™ 660M/680M Graphics or Intel Iris Xe Graphics",
+            "sub_model": "Gen 3 (2022)",
+            "lifecycle": "Available",
+            "support_os": "Windows 11 Pro, Windows 10 Pro, Linux",
+            "ports": "1x USB 3.2 Gen 1, 1x USB 3.2 Gen 1 (Always On), 2x Thunderbolt 4 / USB4® 40Gbps, 1x HDMI, Headphone / microphone combo jack (3.5mm)",
+            "ram_soldered": "Yes (Soldered)",
+            "ram_slots": "Soldered to systemboard, no slots",
+            "ram_type": "LPDDR5",
+            "ram_max": "16GB or 32GB (soldered)",
+            "storage_slots": "One M.2 2280 PCIe® 4.0 x4 slot",
+            "screen_options": "14.0\" WUXGA (1920 x 1200) IPS, 14.0\" 2.2K (2240 x 1400) IPS, 14.0\" 2.8K (2880 x 1800) OLED",
+            "webcam": "FHD 1080p + IR hybrid, with privacy shutter, or FHD 1080p, with privacy shutter, or HD 720p, with privacy shutter",
+            "biometrics": "FPR (Fingerprint Reader) / IR (Infrared Camera)",
+            "weight": "Starting at 1.22 kg (2.71 lbs)",
+            "wifi_bt": "Intel® Wi-Fi® 6E AX211, 802.11ax 2x2 Wi-Fi® + Bluetooth® 5.1 (Bluetooth® 5.2 hardware ready) or MediaTek Wi-Fi® 6E RZ616",
+            "security_tpm": "Discrete TPM 2.0 and Microsoft Pluton TPM 2.0",
+            "has_wwan": true,
+            "wwan_modules": [
+                {
+                    "module_name": null,
+                    "part_number": "\n  5W10V25860\n  ",
+                    "network_speed": null,
+                    "esim_support": null,
+                    "physical_sim": null,
+                    "tray_pn": "5M21H89525",
+                    "status": null
+                },
+                {
+                    "module_name": null,
+                    "part_number": "\n  5W10V25833\n  ",
+                    "network_speed": null,
+                    "esim_support": "Yes",
+                    "physical_sim": null,
+                    "tray_pn": "5M21H89525",
+                    "status": null
+                },
+                {
+                    "module_name": null,
+                    "part_number": "\n  5W10V25832\n  ",
+                    "network_speed": null,
+                    "esim_support": "Yes",
+                    "physical_sim": null,
+                    "tray_pn": "5M21H89525",
+                    "status": null
+                },
+                {
+                    "module_name": null,
+                    "part_number": "\n  5W10V25861\n  ",
+                    "network_speed": null,
+                    "esim_support": "Yes",
+                    "physical_sim": null,
+                    "tray_pn": "5M21H89525",
+                    "status": null
+                },
+                {
+                    "module_name": null,
+                    "part_number": "\n  5W10V25794\n  ",
+                    "network_speed": null,
+                    "esim_support": null,
+                    "physical_sim": null,
+                    "tray_pn": "5M21H89525",
+                    "status": null
+                },
+                {
+                    "module_name": null,
+                    "part_number": "\n  5W10V25827\n  ",
+                    "network_speed": null,
+                    "esim_support": "Yes",
+                    "physical_sim": null,
+                    "tray_pn": "5M21H89525",
+                    "status": null
+                }
+            ],
+            "sim_slot_type": "Nano-SIM / eSIM",
+            "has_esim": true,
+            "power_watts": "65W",
+            "power_connector": "USB-C",
+            "power_pn": "Unknown",
+            "battery_info": "Integrated Li-Polymer 57Wh battery",
+            "expert_notes": "WWAN is an optional feature. Some configurations may not include it.  WWAN upgrades are possible, but may require additional antennas and components. The AMD version may have limited WWAN options.",
+            "pdf_links": [
+                "(https://psref.lenovo.com/syspool/Sys/PDF/ThinkPad/ThinkPad_T14s_Gen_3_Intel/ThinkPad_T14s_Gen_3_Intel_Spec.pdf)"
+            ]
+        }
+    },
+    "HP": {
+        "EliteDesk 800 G4 Mini": {
+            "type": "Mini Desktop",
+            "cpu": "8th Generation Intel Core i5/i7/Celeron",
+            "gpu": "Intel UHD Graphics 630 (integrated)",
+            "sub_model": "G4",
+            "lifecycle": "Discontinued",
+            "support_os": "Windows 10 Pro, Windows 11 Pro, FreeDOS 2.0",
+            "ports": "Front: 1 x USB-C 3.1 Gen 2, 2 x USB 3.1 Gen 1, 1 x USB 3.1 Gen 2; Rear: 2 x DisplayPort 1.2, 2 x USB 3.1 Gen 2, 2 x USB 3.1 Gen 1, 1 x RJ45 (Gigabit Ethernet), Headphone and Headset jacks",
+            "ram_soldered": "No (Upgradable)",
+            "ram_slots": "2",
+            "ram_type": "DDR4 SODIMM",
+            "ram_max": "32GB",
+            "storage_slots": "2 x M.2 2230/2280 (for storage), 1 x 2.5\" SATA drive bay optional",
+            "screen_options": "N/A",
+            "webcam": "N/A",
+            "biometrics": "N/A",
+            "weight": "0.96 kg - 1.05 kg (depending on configuration)",
+            "wifi_bt": "Optional -Wi-Fi 5 (802.11ac) and Bluetooth 5.0",
+            "security_tpm": "TPM 2.0",
+            "has_wwan": false,
+            "wwan_modules": [],
+            "sim_slot_type": "Not Applicable",
+            "has_esim": false,
+            "power_watts": "65W/90W/120W/150W",
+            "power_connector": "7.4*5.0mm",
+            "power_pn": "Various, check original adapter",
+            "battery_info": "No Battery",
+            "expert_notes": "Supports up to 32GB DDR4-2666 SDRAM.  Has two M.2 slots for storage.  Can be mounted behind a monitor.  Supports Windows 11.  Uses an external power supply.  Optional Thunderbolt card",
+            "pdf_links": [
+                "(https://h20195.www2.hp.com/v2/getpdf.aspx/c06040430.pdf)"
+            ]
+        }
+    }
+}
