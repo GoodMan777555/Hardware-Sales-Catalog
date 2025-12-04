@@ -2,63 +2,146 @@ import streamlit as st
 import json
 import os
 import pandas as pd
+import re
 
-# --- PAGE CONFIGURATION ---
-st.set_page_config(page_title="Hardware Sales Catalog", layout="wide", page_icon="🛍️")
+# --- 1. PAGE CONFIGURATION ---
+st.set_page_config(page_title="Hardware Catalog", layout="wide", page_icon="🛍️")
 
-# --- CUSTOM CSS (DARK TECH THEME) ---
+# --- 2. CUSTOM CSS (BRANDED) ---
 st.markdown("""
 <style>
-    /* Global Background & Text */
+    /* --- BRAND PALETTE --- 
+       Blue:   #29B6F6
+       Green:  #66BB6A
+       Pink:   #EC407A
+       Yellow: #FFA726
+    */
+
+    /* Global Settings */
     .stApp {
         background-color: #0e1117;
         color: #fafafa;
     }
     
-    /* SEARCH RESULT CARD (Grid Item) */
-    .result-card {
-        background-color: #1e1e1e;
-        border: 1px solid #333;
-        border-radius: 10px;
-        padding: 15px;
-        height: 100%;
-        transition: transform 0.2s;
-        cursor: pointer;
+    /* --- HERO SECTION --- */
+    .hero-container {
+        text-align: center;
+        padding: 40px 20px 20px 20px;
+        background: linear-gradient(180deg, #161b22 0%, #0e1117 100%);
+        border-bottom: 1px solid #30363d;
+        margin-bottom: 30px;
+        border-radius: 0 0 20px 20px;
     }
-    .result-card:hover {
-        border-color: #00e5ff;
-        background-color: #262730;
-        transform: translateY(-5px);
-    }
-    .result-title {
-        font-size: 1.1em;
-        font-weight: bold;
-        color: #fff;
-        margin-bottom: 5px;
-    }
-    .result-sub {
-        font-size: 0.9em;
-        color: #aaa;
+    
+    /* BRANDED GRADIENT TITLE */
+    .hero-title {
+        font-size: 3em;
+        font-weight: 800;
+        /* Gradient from Brand Blue to Brand Pink */
+        background: -webkit-linear-gradient(45deg, #29B6F6, #EC407A);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
         margin-bottom: 10px;
     }
+    .hero-subtitle {
+        color: #8b949e;
+        font-size: 1.1em;
+        margin-bottom: 30px;
+    }
 
-    /* Full Model Card Container */
-    .model-card-full {
-        background-color: #1e1e1e;
-        border: 1px solid #333;
-        border-radius: 12px;
+    /* SEARCH INPUT STYLE (Brand Blue Focus) */
+    div[data-testid="stTextInput"] input {
+        border-radius: 50px;
+        text-align: center;
+        font-size: 1.2em;
+        padding: 15px;
+        border: 2px solid #30363d;
+        background-color: #0d1117;
+        transition: border-color 0.3s, box-shadow 0.3s;
+    }
+    div[data-testid="stTextInput"] input:focus {
+        border-color: #29B6F6; /* Brand Blue */
+        box-shadow: 0 0 15px rgba(41, 182, 246, 0.3);
+    }
+
+    /* PRODUCT CARD (Grid View) */
+    .product-card-container {
+        background-color: #161b22;
+        border: 1px solid #30363d;
+        border-radius: 15px;
         padding: 20px;
-        margin-bottom: 16px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        height: 100%; 
+        min-height: 220px; 
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
     }
     
-    /* Header Styling */
-    h1, h2, h3 {
-        color: #00e5ff !important;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* HOVER EFFECT (Brand Pink Glow) */
+    .product-card-container:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+        border-color: #EC407A; /* Brand Pink */
     }
     
-    /* Badges/Tags */
+    .card-brand { color: #8b949e; font-size: 0.8em; text-transform: uppercase; letter-spacing: 1px; }
+    .card-model { color: #ffffff; font-size: 1.3em; font-weight: bold; margin: 5px 0; }
+    
+    /* --- BRANDED TAGS --- */
+    .spec-tag {
+        display: inline-block;
+        padding: 3px 8px;
+        border-radius: 12px;
+        background-color: #21262d;
+        color: #c9d1d9;
+        font-size: 0.75em;
+        margin-right: 5px;
+        margin-bottom: 5px;
+        border: 1px solid #30363d;
+        white-space: nowrap; 
+        font-weight: 600;
+    }
+    
+    /* BRAND COLORS FOR STATUS */
+    .ram-ok { 
+        color: #66BB6A; /* Brand Green */
+        border-color: #66BB6A; 
+        background: rgba(102, 187, 106, 0.1); 
+    }
+    .ram-warn { 
+        color: #FFA726; /* Brand Yellow/Orange */
+        border-color: #FFA726; 
+        background: rgba(255, 167, 38, 0.1); 
+    }
+    .ram-bad { 
+        color: #EC407A; /* Brand Pink */
+        border-color: #EC407A; 
+        background: rgba(236, 64, 122, 0.1); 
+    }
+    .wwan-tag {
+        color: #29B6F6; /* Brand Blue */
+        border-color: #29B6F6;
+        background: rgba(41, 182, 246, 0.1);
+    }
+
+    /* --- CLASSIC DETAILS STYLING (UPDATED COLORS) --- */
+    /* Section Headers */
+    .card-section-header {
+        color: #29B6F6; /* Brand Blue */
+        font-size: 0.9em;
+        text-transform: uppercase;
+        margin-top: 15px;
+        margin-bottom: 8px;
+        border-bottom: 1px solid #333;
+        padding-bottom: 2px;
+        font-weight: bold;
+    }
+    
+    /* Headers */
+    h1, h2, h3 { color: #29B6F6 !important; }
+
+    /* Detail Tags */
     .tag {
         display: inline-flex;
         align-items: center;
@@ -74,58 +157,27 @@ st.markdown("""
     }
     .tag-icon { margin-right: 5px; }
     
-    /* Special Status Tags */
-    .tag-blue { border-color: #00e5ff; color: #00e5ff; background-color: rgba(0, 229, 255, 0.1); }
-    .tag-green { border-color: #00ff00; color: #00ff00; background-color: rgba(0, 255, 0, 0.1); }
-    .tag-red { border-color: #ff4b4b; color: #ff4b4b; background-color: rgba(255, 75, 75, 0.1); }
-    .tag-orange { border-color: #e67e22; color: #e67e22; background-color: rgba(230, 126, 34, 0.1); }
-    .tag-purple { border-color: #9b59b6; color: #9b59b6; background-color: rgba(155, 89, 182, 0.1); }
-    
-    /* Section Headers inside Card */
-    .card-section-header {
-        color: #888;
-        font-size: 0.8em;
-        text-transform: uppercase;
-        margin-top: 15px;
-        margin-bottom: 8px;
-        border-bottom: 1px solid #333;
-        padding-bottom: 2px;
-        font-weight: bold;
-    }
+    .tag-blue { border-color: #29B6F6; color: #29B6F6; background-color: rgba(41, 182, 246, 0.1); }
+    .tag-green { border-color: #66BB6A; color: #66BB6A; background-color: rgba(102, 187, 106, 0.1); }
+    .tag-red { border-color: #EC407A; color: #EC407A; background-color: rgba(236, 64, 122, 0.1); }
+    .tag-orange { border-color: #FFA726; color: #FFA726; background-color: rgba(255, 167, 38, 0.1); }
+    .tag-purple { border-color: #AB47BC; color: #AB47BC; background-color: rgba(171, 71, 188, 0.1); }
 
-    /* Warning Box */
     .warning-box {
         background-color: #2d1b1b;
-        border-left: 4px solid #ff4b4b;
+        border-left: 4px solid #EC407A;
         padding: 15px;
         margin-top: 20px;
         border-radius: 5px;
         font-size: 0.95em;
         color: #ffcccb;
     }
-    
-    /* PDF Links */
-    .pdf-link a {
-        color: #00e5ff;
-        text-decoration: none;
-        font-weight: bold;
-    }
-    .pdf-link a:hover { text-decoration: underline; }
-
-    /* Warning Text Small */
-    .warn-text {
-        font-size: 0.8em;
-        color: #ffcc00;
-        font-style: italic;
-        margin-left: 5px;
-    }
 </style>
 """, unsafe_allow_html=True)
 
 DB_FILE = "hardware_db.json"
 
-# --- STATE MANAGEMENT ---
-# We use this to track which model is currently "Open"
+# --- 3. STATE MANAGEMENT ---
 if 'selected_model_id' not in st.session_state:
     st.session_state.selected_model_id = None
 
@@ -135,8 +187,8 @@ def set_model(model_id):
 def clear_model():
     st.session_state.selected_model_id = None
 
-# --- HELPER: LOGIC FOR RAM STATUS ---
-def get_ram_status(row):
+# --- 4. HELPERS ---
+def get_ram_status_details(row):
     status_str = str(row.get('ram_soldered', '')).lower()
     slots_str = str(row.get('ram_slots', '')).lower()
     
@@ -145,15 +197,16 @@ def get_ram_status(row):
              return "orange", "🟠 Partial"
         return "red", "🔴 Soldered"
 
-    if "partial" in status_str:
-        return "orange", "🟠 Partial"
-    
-    if "yes" in status_str or "soldered" in status_str:
-        return "red", "🔴 Soldered"
-        
+    if "partial" in status_str: return "orange", "🟠 Partial"
+    if "yes" in status_str or "soldered" in status_str: return "red", "🔴 Soldered"
     return "green", "🟢 Upgradable"
 
-# --- HELPER: PORT ICONS ---
+def get_ram_status_class(row):
+    color, _ = get_ram_status_details(row)
+    if color == "orange": return "ram-warn", "Partial"
+    if color == "red": return "ram-bad", "Soldered"
+    return "ram-ok", "Upgradable"
+
 def format_ports_with_icons(ports_text):
     if not ports_text: return ""
     icon_map = {
@@ -166,7 +219,13 @@ def format_ports_with_icons(ports_text):
         if k in fmt: fmt = fmt.replace(k, f"{i} {k}")
     return fmt
 
-# --- DATA LOADER ---
+def format_cpu_preview(cpu_text):
+    if not cpu_text: return "CPU: N/A"
+    clean = re.sub(r'\(.*?\)', '', str(cpu_text))
+    words = clean.split()
+    short = " ".join(words[:4])
+    return f"CPU: {short}..."
+
 @st.cache_data
 def load_data():
     if not os.path.exists(DB_FILE): return []
@@ -180,92 +239,138 @@ def load_data():
             item = specs.copy()
             item['brand'] = brand
             item['model'] = m_name
-            item['display_name'] = f"{brand} {m_name}" 
-            # Unique ID for state logic
             item['id'] = f"{brand}_{m_name}"
-            item['search_blob'] = f"{brand} {m_name} {specs.get('cpu','')} {specs.get('gpu','')} {specs.get('power_pn','')} {specs.get('modem_pn','')} {specs.get('type','')}".lower()
+            item['search_blob'] = f"{brand} {m_name} {specs.get('cpu','')} {specs.get('gpu','')} {specs.get('type','')}".lower()
             flat.append(item)
     return flat
 
-# --- MAIN APP ---
-st.title("🛍️ Hardware Sales Catalog")
+# --- 5. MAIN APP LOGIC ---
 
 data = load_data()
 if not data:
-    st.info("👋 Database is empty. Add models via hardware.py")
+    st.error("⚠️ Database is empty. Please run hardware.py to add items.")
     st.stop()
 
 df = pd.DataFrame(data)
 
-# === SIDEBAR (FILTERS) ===
-st.sidebar.header("🔍 Filter Catalog")
+# ==========================================================
+#                   CENTRAL HERO & SEARCH
+# ==========================================================
 
-# 1. Search
-search_text = st.sidebar.text_input("🔎 Search (Text)", placeholder="e.g. 7420, RTX...")
+if st.session_state.selected_model_id is None:
+    
+    # 1. HERO BLOCK
+    st.markdown("""
+        <div class="hero-container">
+            <div class="hero-title">IT HARDWARE HUB</div>
+            <div class="hero-subtitle">Internal Catalog & Specifications</div>
+        </div>
+    """, unsafe_allow_html=True)
 
-# 2. Filters
-all_brands = sorted(list(set(df['brand'])))
-sel_brands = st.sidebar.multiselect("Manufacturer", all_brands)
+    # 2. CENTRAL SEARCH BAR
+    c1, c2, c3 = st.columns([1, 6, 1])
+    with c2:
+        search_query = st.text_input("🔍 Search Catalog", placeholder="e.g. Dell 5420, i7, 32GB...", label_visibility="collapsed")
 
-all_types = sorted(list(set(df['type'])))
-sel_types = st.sidebar.multiselect("Device Type", all_types)
+    # 3. HORIZONTAL FILTERS
+    st.write("")
+    f_col1, f_col2, f_col3 = st.columns([1, 1, 1])
+    
+    with f_col1:
+        all_brands = sorted(df['brand'].unique())
+        sel_brand = st.multiselect("🏷️ Brand", all_brands, placeholder="All Brands")
+        
+    with f_col2:
+        all_types = sorted(df['type'].unique())
+        sel_type = st.multiselect("💻 Device Type", all_types, placeholder="All Types")
 
-st.sidebar.divider()
+    with f_col3:
+        sel_features = st.multiselect("✨ Features", ["WWAN (SIM)", "eSIM", "Upgradable RAM", "Dedicated GPU"], placeholder="Any Feature")
 
-# 3. Toggles
-feature_options = ["WWAN (LTE/5G)", "eSIM Support", "Dedicated GPU", "Upgradable RAM"]
-sel_features = st.sidebar.multiselect("Must Have Features", feature_options)
+    st.markdown("---")
 
-st.sidebar.divider()
+    # 4. FILTERING LOGIC
+    filtered_df = df.copy()
 
-# --- REFRESH ---
-if st.sidebar.button("🔄 Force Refresh DB"):
-    st.cache_data.clear()
-    st.rerun()
+    if search_query:
+        filtered_df = filtered_df[filtered_df['search_blob'].str.contains(search_query.lower())]
+    if sel_brand:
+        filtered_df = filtered_df[filtered_df['brand'].isin(sel_brand)]
+    if sel_type:
+        filtered_df = filtered_df[filtered_df['type'].isin(sel_type)]
+    if "WWAN (SIM)" in sel_features:
+        filtered_df = filtered_df[filtered_df['has_wwan'] == True]
+    if "eSIM" in sel_features:
+        filtered_df = filtered_df[filtered_df['has_esim'] == True]
+    if "Dedicated GPU" in sel_features:
+         gpu_kw = "NVIDIA|AMD|Radeon|RTX|Quadro|Discrete"
+         filtered_df = filtered_df[filtered_df['gpu'].astype(str).str.contains(gpu_kw, case=False, na=False)]
+    if "Upgradable RAM" in sel_features:
+        def check_ram(r):
+            cls, _ = get_ram_status_class(r)
+            return cls != "ram-bad"
+        filtered_df = filtered_df[filtered_df.apply(check_ram, axis=1)]
 
-# === FILTERING LOGIC ===
-filtered_df = df.copy()
+    # --- SORTING (Alphabetical) ---
+    filtered_df = filtered_df.sort_values(by=['brand', 'model'])
 
-if sel_brands: filtered_df = filtered_df[filtered_df['brand'].isin(sel_brands)]
-if sel_types: filtered_df = filtered_df[filtered_df['type'].isin(sel_types)]
+    # 5. RESULTS GRID
+    if filtered_df.empty:
+        st.warning("😕 No results found.")
+    else:
+        st.caption(f"Models Found: {len(filtered_df)}")
+        
+        cols_per_row = 3
+        rows = [filtered_df.iloc[i:i + cols_per_row] for i in range(0, len(filtered_df), cols_per_row)]
 
-if "WWAN (LTE/5G)" in sel_features:
-    filtered_df = filtered_df[filtered_df['has_wwan'] == True]
-if "eSIM Support" in sel_features:
-    filtered_df = filtered_df[filtered_df['has_esim'] == True]
-if "Dedicated GPU" in sel_features:
-    gpu_kw = "NVIDIA|AMD|Radeon|RTX|Quadro|Discrete|Dedicated"
-    filtered_df = filtered_df[filtered_df['gpu'].astype(str).str.contains(gpu_kw, case=False, na=False)]
-if "Upgradable RAM" in sel_features:
-    def is_upgradable_check(row):
-        color, _ = get_ram_status(row)
-        return color != "red"
-    mask = filtered_df.apply(is_upgradable_check, axis=1)
-    filtered_df = filtered_df[mask]
+        for row_items in rows:
+            cols = st.columns(cols_per_row)
+            for idx, (index, item) in enumerate(row_items.iterrows()):
+                with cols[idx]:
+                    ram_cls, ram_txt = get_ram_status_class(item)
+                    cpu_preview = format_cpu_preview(item.get('cpu'))
+                    
+                    wwan_badge = ""
+                    if item.get('has_wwan'):
+                        # Using Brand Blue for WWAN
+                        wwan_badge = f'<span class="spec-tag wwan-tag">📡 4G/5G</span>'
 
-if search_text:
-    filtered_df = filtered_df[filtered_df['search_blob'].str.contains(search_text.lower())]
+                    # --- SINGLE LINE HTML FOR CARD (FIXED </div> ISSUE) ---
+                    card_html = (
+                        f'<div class="product-card-container">'
+                        f'<div>'
+                        f'<div class="card-brand">{item["brand"]}</div>'
+                        f'<div class="card-model">{item["model"]}</div>'
+                        f'<div style="font-size: 0.9em; color: #aaa; margin-bottom: 10px;">{item.get("sub_model", "")}</div>'
+                        f'</div>'
+                        f'<div>'
+                        f'<span class="spec-tag" title="{item.get("cpu")}">{cpu_preview}</span>'
+                        f'<span class="spec-tag {ram_cls}">RAM: {ram_txt}</span>'
+                        f'{wwan_badge}'
+                        f'</div>'
+                        f'</div>'
+                    )
+                    
+                    st.markdown(card_html, unsafe_allow_html=True)
+                    
+                    if st.button(f"View Details ➜", key=f"btn_{item['id']}", use_container_width=True):
+                        set_model(item['id'])
+                        st.rerun()
+            st.write("")
 
-
-# ========================================================
-#                MAIN CONTENT LOGIC
-# ========================================================
-
-# If a model is selected, show DETAILS VIEW
-if st.session_state.selected_model_id:
-    # Find the model data
+# ==========================================================
+#         DETAIL VIEW (BRANDED LAYOUT)
+# ==========================================================
+else:
     selected_row = df[df['id'] == st.session_state.selected_model_id]
     
     if not selected_row.empty:
         row = selected_row.iloc[0]
         
-        # --- BACK BUTTON ---
-        if st.button("🔙 Back to Search Results"):
+        if st.button("⬅️ Back to Search"):
             clear_model()
             st.rerun()
 
-        # --- RENDER SINGLE MODEL VIEW (From previous code) ---
-        
         # BADGES
         badges = []
         icon_type = "💻" if "Laptop" in row['type'] else "🖥️"
@@ -273,7 +378,7 @@ if st.session_state.selected_model_id:
         if row.get('has_wwan'): badges.append("<span class='tag tag-blue'><span class='tag-icon'>📡</span>WWAN Ready</span>")
         if row.get('has_esim'): badges.append("<span class='tag tag-green'><span class='tag-icon'>📲</span>eSIM</span>")
         
-        ram_color, ram_text = get_ram_status(row)
+        ram_color, ram_text = get_ram_status_details(row)
         if ram_color == "red": badges.append(f"<span class='tag tag-red'><span class='tag-icon'>🔒</span>{ram_text}</span>")
         elif ram_color == "orange": badges.append(f"<span class='tag tag-orange'><span class='tag-icon'>⚠️</span>{ram_text}</span>")
         else: badges.append(f"<span class='tag tag-green'><span class='tag-icon'>🛠️</span>{ram_text}</span>")
@@ -286,9 +391,9 @@ if st.session_state.selected_model_id:
         
         badges_html = "".join(badges)
 
-        # HERO
+        # HEADER
         st.markdown(f"""
-        <div class="hero-card">
+        <div style="margin-bottom: 20px;">
             <h1 style="margin-bottom: 5px;">{row['brand']} {row['model']}</h1>
             <div style="color: #aaa; margin-bottom: 15px; font-size: 1.1em;">{row.get('sub_model', '')}</div>
             <div>{badges_html}</div>
@@ -351,49 +456,3 @@ if st.session_state.selected_model_id:
         if st.button("Back"):
             clear_model()
             st.rerun()
-
-# ========================================================
-# ELSE: SHOW SEARCH RESULTS GRID (Default View)
-# ========================================================
-else:
-    st.subheader(f"🔎 Found {len(filtered_df)} models matching your criteria")
-    
-    if filtered_df.empty:
-        st.warning("No models match the current filters.")
-    else:
-        # Display as a grid using columns
-        cols_per_row = 2 # You can change this to 3 for smaller cards
-        
-        # Iterate through rows and create grid
-        for i in range(0, len(filtered_df), cols_per_row):
-            cols = st.columns(cols_per_row)
-            # Loop for each column in the row
-            for j in range(cols_per_row):
-                if i + j < len(filtered_df):
-                    row = filtered_df.iloc[i + j]
-                    with cols[j]:
-                        # Create a "mini card" visual
-                        with st.container(border=True):
-                            st.markdown(f"<div style='font-size: 1.2em; font-weight: bold; color: #00e5ff;'>{row['brand']} {row['model']}</div>", unsafe_allow_html=True)
-                            st.caption(row.get('sub_model', ''))
-                            
-                            # Mini Badges
-                            mini_badges = []
-                            if row.get('has_wwan'): mini_badges.append("📡 WWAN")
-                            if row.get('has_esim'): mini_badges.append("📲 eSIM")
-                            if "NVIDIA" in str(row.get('gpu', '')) or "Discrete" in str(row.get('gpu', '')): mini_badges.append("🎮 GPU")
-                            
-                            # RAM Status color
-                            r_color, _ = get_ram_status(row)
-                            ram_dot = "🟢" if r_color == "green" else ("🟠" if r_color == "orange" else "🔴")
-                            
-                            st.markdown(f"**CPU:** {row.get('cpu')}")
-                            st.markdown(f"**RAM:** {ram_dot} Max {row.get('ram_max')}")
-                            
-                            if mini_badges:
-                                st.caption(" | ".join(mini_badges))
-                            
-                            # The Button is the "Link"
-                            if st.button(f"👉 View Details", key=f"btn_{row['id']}"):
-                                set_model(row['id'])
-                                st.rerun()
