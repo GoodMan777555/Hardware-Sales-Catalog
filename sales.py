@@ -7,7 +7,7 @@ import re
 # --- 1. PAGE CONFIGURATION ---
 st.set_page_config(page_title="Hardware Catalog", layout="wide", page_icon="🛍️")
 
-# --- 2. CUSTOM CSS (BRANDED) ---
+# --- 2. CUSTOM CSS (BRANDED + DROPDOWN FIX) ---
 st.markdown("""
 <style>
     /* --- BRAND PALETTE --- 
@@ -23,6 +23,30 @@ st.markdown("""
         color: #fafafa;
     }
     
+    /* --- DROPDOWN MENU FIX --- */
+    /* Force dropdown options to have a contrasting background */
+    div[data-baseweb="popover"], div[data-baseweb="menu"] {
+        background-color: #262730 !important; /* Dark grey background */
+        border: 1px solid #444 !important;
+    }
+    
+    /* Dropdown text color */
+    div[data-baseweb="select"] ul li {
+        color: #fff !important;
+    }
+    
+    /* Hover effect in dropdown */
+    div[data-baseweb="select"] ul li:hover {
+        background-color: #29B6F6 !important; /* Brand Blue on hover */
+        color: #fff !important;
+    }
+    
+    /* Selected items tags in multiselect */
+    .stMultiSelect span[data-baseweb="tag"] {
+        background-color: rgba(41, 182, 246, 0.2) !important; /* Light Brand Blue */
+        border: 1px solid #29B6F6 !important;
+    }
+
     /* --- HERO SECTION --- */
     .hero-container {
         text-align: center;
@@ -37,7 +61,6 @@ st.markdown("""
     .hero-title {
         font-size: 3em;
         font-weight: 800;
-        /* Gradient from Brand Blue to Brand Pink */
         background: -webkit-linear-gradient(45deg, #29B6F6, #EC407A);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -49,7 +72,7 @@ st.markdown("""
         margin-bottom: 30px;
     }
 
-    /* SEARCH INPUT STYLE (Brand Blue Focus) */
+    /* SEARCH INPUT STYLE */
     div[data-testid="stTextInput"] input {
         border-radius: 50px;
         text-align: center;
@@ -60,11 +83,11 @@ st.markdown("""
         transition: border-color 0.3s, box-shadow 0.3s;
     }
     div[data-testid="stTextInput"] input:focus {
-        border-color: #29B6F6; /* Brand Blue */
+        border-color: #29B6F6; 
         box-shadow: 0 0 15px rgba(41, 182, 246, 0.3);
     }
 
-    /* PRODUCT CARD (Grid View) */
+    /* PRODUCT CARD */
     .product-card-container {
         background-color: #161b22;
         border: 1px solid #30363d;
@@ -78,17 +101,16 @@ st.markdown("""
         transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
     }
     
-    /* HOVER EFFECT (Brand Pink Glow) */
     .product-card-container:hover {
         transform: translateY(-5px);
         box-shadow: 0 10px 20px rgba(0,0,0,0.3);
-        border-color: #EC407A; /* Brand Pink */
+        border-color: #EC407A; 
     }
     
     .card-brand { color: #8b949e; font-size: 0.8em; text-transform: uppercase; letter-spacing: 1px; }
     .card-model { color: #ffffff; font-size: 1.3em; font-weight: bold; margin: 5px 0; }
     
-    /* --- BRANDED TAGS --- */
+    /* TAGS */
     .spec-tag {
         display: inline-block;
         padding: 3px 8px;
@@ -103,32 +125,14 @@ st.markdown("""
         font-weight: 600;
     }
     
-    /* BRAND COLORS FOR STATUS */
-    .ram-ok { 
-        color: #66BB6A; /* Brand Green */
-        border-color: #66BB6A; 
-        background: rgba(102, 187, 106, 0.1); 
-    }
-    .ram-warn { 
-        color: #FFA726; /* Brand Yellow/Orange */
-        border-color: #FFA726; 
-        background: rgba(255, 167, 38, 0.1); 
-    }
-    .ram-bad { 
-        color: #EC407A; /* Brand Pink */
-        border-color: #EC407A; 
-        background: rgba(236, 64, 122, 0.1); 
-    }
-    .wwan-tag {
-        color: #29B6F6; /* Brand Blue */
-        border-color: #29B6F6;
-        background: rgba(41, 182, 246, 0.1);
-    }
+    .ram-ok { color: #66BB6A; border-color: #66BB6A; background: rgba(102, 187, 106, 0.1); }
+    .ram-warn { color: #FFA726; border-color: #FFA726; background: rgba(255, 167, 38, 0.1); }
+    .ram-bad { color: #EC407A; border-color: #EC407A; background: rgba(236, 64, 122, 0.1); }
+    .wwan-tag { color: #29B6F6; border-color: #29B6F6; background: rgba(41, 182, 246, 0.1); }
 
-    /* --- CLASSIC DETAILS STYLING (UPDATED COLORS) --- */
-    /* Section Headers */
+    /* DETAIL VIEW STYLES */
     .card-section-header {
-        color: #29B6F6; /* Brand Blue */
+        color: #29B6F6;
         font-size: 0.9em;
         text-transform: uppercase;
         margin-top: 15px;
@@ -138,10 +142,8 @@ st.markdown("""
         font-weight: bold;
     }
     
-    /* Headers */
     h1, h2, h3 { color: #29B6F6 !important; }
 
-    /* Detail Tags */
     .tag {
         display: inline-flex;
         align-items: center;
@@ -156,7 +158,6 @@ st.markdown("""
         border: 1px solid #444;
     }
     .tag-icon { margin-right: 5px; }
-    
     .tag-blue { border-color: #29B6F6; color: #29B6F6; background-color: rgba(41, 182, 246, 0.1); }
     .tag-green { border-color: #66BB6A; color: #66BB6A; background-color: rgba(102, 187, 106, 0.1); }
     .tag-red { border-color: #EC407A; color: #EC407A; background-color: rgba(236, 64, 122, 0.1); }
@@ -332,10 +333,9 @@ if st.session_state.selected_model_id is None:
                     
                     wwan_badge = ""
                     if item.get('has_wwan'):
-                        # Using Brand Blue for WWAN
                         wwan_badge = f'<span class="spec-tag wwan-tag">📡 4G/5G</span>'
 
-                    # --- SINGLE LINE HTML FOR CARD (FIXED </div> ISSUE) ---
+                    # CARD HTML
                     card_html = (
                         f'<div class="product-card-container">'
                         f'<div>'

@@ -9,7 +9,7 @@
             "support_os": "Windows 10 (64-bit), Windows 11 (64-bit), Ubuntu 20.04 LTS (64-bit)",
             "ports": "2x USB 3.2 Gen 1 Type-A (1x with PowerShare), 2x Thunderbolt 4 (USB-C, Power Delivery, DisplayPort), 1x HDMI 2.0, 1x RJ45 Ethernet, 1x Universal audio jack, 1x microSD-card slot, 1x Wedge-shaped lock slot, Optional Smart card reader.",
             "ram_soldered": "No (Upgradable)",
-            "ram_slots": "2",
+            "ram_slots": "2 SODIMM slots",
             "ram_type": "DDR4, 3200 MHz",
             "ram_max": "64 GB (2 x 32 GB)",
             "storage_slots": "1x M.2 2230/2280 slot for NVMe SSD (PCIe Gen3 x4 or Gen4 x4). Optional 1x 2.5-inch SATA HDD/SSD bay (may be mutually exclusive with certain battery configurations).",
@@ -62,7 +62,7 @@
             "ports": "Headphone/microphone combo jack, 2x USB 3.1 Gen 1, 1x USB 3.1 Gen 1 (PowerShare), 1x HDMI, 1x VGA, 1x USB-C (supports DisplayPort Alt Mode), 1x RJ-45 (LAN), 1x SD 4.0 Memory card reader, Optional Smart Card Reader",
             "ram_soldered": "No (Upgradable)",
             "ram_slots": "2 SoDIMM",
-            "ram_type": "DDR4",
+            "ram_type": "DDR4 2400 MHz",
             "ram_max": "32GB",
             "storage_slots": "1x 2.5-inch bay for HDD/SATA SSD, 1x M.2 2280 slot for SATA/PCIe NVMe SSD, WWAN slot can accept M.2 2242 SATA SSD (not NVMe)",
             "screen_options": "14-inch HD or Full HD (1920 x 1080) Anti-Glare WVA display with 220 cd/m² brightness; Touch options available",
@@ -110,6 +110,48 @@
             "expert_notes": "The WWAN slot can accept M.2 2242 SATA SSDs, but not NVMe SSDs, and may not be detected by BIOS in some configurations. Antennas for WWAN might not be present if the laptop did not ship with a WWAN card, and installing them can be difficult. Dell Latitude 5290/5490/5590 models do NOT support the Dell Thunderbolt Dock TB16. [cite: 7 in 1st step search]",
             "pdf_links": [
                 "(https://files.bbystatic.com/2W5TUqg0WabbjXviL5WaCw%3D%3D/71183bd8-6229-4dd3-baee-662edff8f5fa.pdf)"
+            ]
+        },
+        "Latitude 5420 11th Gen": {
+            "type": "Laptop",
+            "cpu": "11th Generation Intel Core i3/i5/i7",
+            "gpu": "Intel UHD Graphics (integrated)",
+            "sub_model": "11th Gen",
+            "lifecycle": "Available",
+            "support_os": "Windows 11, Windows 10, Ubuntu 20.04 LTS",
+            "ports": "USB 3.2 Gen 1, USB 3.2 Gen 1 with PowerShare, Two Thunderbolt 4 ports with DisplayPort Alt Mode/USB4/Power Delivery, HDMI 2.0, RJ45 Ethernet port, microSD-card slot, Universal audio port",
+            "ram_soldered": "No (Upgradable)",
+            "ram_slots": "2 SO-DIMM ",
+            "ram_type": "DDR4 3200 MHz",
+            "ram_max": "32GB (2  slots SO-DIMM )",
+            "storage_slots": "M.2 2280/2230 Gen 4 PCIe x4 NVMe ",
+            "screen_options": "14-inch, HD 1366 x 768, 60 Hz, anti-glare, non-touch, 45% NTSC, 220 nits, wide-viewing angle, 1920 x 1080 IPS display",
+            "webcam": "Yes, Full HD IR webcam",
+            "biometrics": "Fingerprint reader (optional), IR facial recognition",
+            "weight": "1.4 kg, 3.1 pounds",
+            "wifi_bt": "Wi-Fi 6, Bluetooth 5.1",
+            "security_tpm": "TPM 2.0",
+            "has_wwan": true,
+            "wwan_modules": [
+                {
+                    "module_name": "DW5821e",
+                    "part_number": "C0RVH/0C0RVH",
+                    "network_speed": "4G LTE",
+                    "esim_support": "Yes",
+                    "physical_sim": "Yes",
+                    "tray_pn": "Unknown",
+                    "status": "Available"
+                }
+            ],
+            "sim_slot_type": "microSIM",
+            "has_esim": true,
+            "power_watts": "65 W/90 W",
+            "power_connector": "USB-C ",
+            "power_pn": "Unknown",
+            "battery_info": "63Wh",
+            "expert_notes": "Supports ExpressCharge technology, Meets MIL-STD 810H testing standards",
+            "pdf_links": [
+                "(https://objects.icecat.biz/objects/mmo_93831779_1631542557_247_713.pdf)"
             ]
         }
     },
@@ -729,11 +771,75 @@
             "pdf_links": [
                 "(https://psref.lenovo.com/syspool/Sys/PDF/ThinkPad/ThinkPad_T14s_Gen_3_Intel/ThinkPad_T14s_Gen_3_Intel_Spec.pdf)"
             ]
+        },
+        "ThinkCentre M70q Tiny Gen 2/11DU": {
+            "type": "Mini PC",
+            "cpu": "10th Generation Intel Core i3/i5/i7/i9",
+            "gpu": "Integrated Intel UHD Graphics 630",
+            "sub_model": "Gen 2/11DU",
+            "lifecycle": "Discontinued",
+            "support_os": "Windows 10 Pro, Windows 11 Pro",
+            "ports": "Front: 2 x USB 3.2 Gen 2, 1 x USB-C 3.2 Gen 1, headphone/microphone combo. Rear: 3 x USB 3.2 Gen 1, 1 x DisplayPort, 1 x HDMI, 1 x RJ45",
+            "ram_soldered": "No (Upgradable)",
+            "ram_slots": "2",
+            "ram_type": "DDR4 2666MHz SO-DIMM",
+            "ram_max": "64GB",
+            "storage_slots": "1x M.2 SSD NvmeUp ,Optional 1x 2.5\" HDD",
+            "screen_options": "None",
+            "webcam": "No camera",
+            "biometrics": "No fingerprint reader",
+            "weight": "1.25 kg (2.76 lbs)",
+            "wifi_bt": "Optional Intel WiFi 6 AX201 802.11AX",
+            "security_tpm": "TPM 2.0",
+            "has_wwan": false,
+            "wwan_modules": [],
+            "sim_slot_type": "eSIM",
+            "has_esim": false,
+            "power_watts": "65W",
+            "power_connector": "Slim Tip",
+            "power_pn": "Various, check the back of the PC for input",
+            "battery_info": "No battery",
+            "expert_notes": "The M70q Tiny is a compact desktop PC known for its enterprise-level performance and upgradeability. It supports up to three monitors. It is compatible with Windows 10 and Windows 11. It is also tested against military-grade requirements for durability",
+            "pdf_links": [
+                "(https://psref.lenovo.com/syspool/Sys/PDF/ThinkCentre/ThinkCentre_M70q_Gen_2/ThinkCentre_M70q_Gen_2_Spec.pdf)"
+            ]
+        },
+        "ThinkCentre M70q Tiny Gen 2": {
+            "type": "Mini PC",
+            "cpu": "Up to 11th Gen Intel Core i9",
+            "gpu": "Integrated Intel UHD Graphics 630/730/750",
+            "sub_model": "Gen 2",
+            "lifecycle": "Available",
+            "support_os": "Windows 11 Pro, Windows 10 Pro",
+            "ports": "Front: USB-C 3.2 Gen 1, USB-A 3.2 Gen 2, Headphone/mic combo. Rear: 2 x USB-A 3.2 Gen 2, 2 x USB-A 3.2 Gen 1, DisplayPort, HDMI, RJ45",
+            "ram_soldered": "No (Upgradable)",
+            "ram_slots": "2",
+            "ram_type": "DDR4",
+            "ram_max": "64GB DDR4-2933",
+            "storage_slots": "M.2 2280 SSD PCIe NVMe ,Optional - 1x 2.5\" HDD ",
+            "screen_options": "None",
+            "webcam": "No webcam",
+            "biometrics": "No fingerprint reader",
+            "weight": "Around 1.25 kg (2.76 lbs)",
+            "wifi_bt": "Intel Wi-Fi 6 AX201, 802.11ax 2x2 Wi-Fi + Bluetooth 5.1",
+            "security_tpm": "TPM 2.0",
+            "has_wwan": false,
+            "wwan_modules": [],
+            "sim_slot_type": "No SIM slot",
+            "has_esim": false,
+            "power_watts": "65W",
+            "power_connector": "Slim tip",
+            "power_pn": "4X20E53336",
+            "battery_info": "No battery",
+            "expert_notes": "Tool-less access for SSD and memory module. Supports up to 3 independent monitors.",
+            "pdf_links": [
+                "(https://psref.lenovo.com/syspool/Sys/PDF/ThinkCentre/ThinkCentre_M70q_Gen_2/ThinkCentre_M70q_Gen_2_Spec.pdf)"
+            ]
         }
     },
     "HP": {
         "EliteDesk 800 G4 Mini": {
-            "type": "Mini Desktop",
+            "type": "Mini PC",
             "cpu": "8th Generation Intel Core i5/i7/Celeron",
             "gpu": "Intel UHD Graphics 630 (integrated)",
             "sub_model": "G4",
@@ -762,6 +868,38 @@
             "expert_notes": "Supports up to 32GB DDR4-2666 SDRAM.  Has two M.2 slots for storage.  Can be mounted behind a monitor.  Supports Windows 11.  Uses an external power supply.  Optional Thunderbolt card",
             "pdf_links": [
                 "(https://h20195.www2.hp.com/v2/getpdf.aspx/c06040430.pdf)"
+            ]
+        },
+        "EliteDesk 800 G6 Mini": {
+            "type": "Mini PC",
+            "cpu": "10th Generation Intel Core i3/i5/i7/i9",
+            "gpu": "Intel UHD Graphics 630 (integrated), NVIDIA GeForce GTX 1660 Ti (optional)",
+            "sub_model": "G6",
+            "lifecycle": "Available",
+            "support_os": "Windows 10 Pro (64-bit), Windows 11 Pro",
+            "ports": "2 x DisplayPort 1.4, 2 x USB 3.2 Gen2 Type-A, 2 x USB 3.2 Gen1 Type-A, 1 x USB 3.2 Gen2 Type-C, 1 x RJ45, 1 x Headphone Jack",
+            "ram_soldered": "No (Upgradable)",
+            "ram_slots": "2 SODIMM",
+            "ram_type": "DDR4-2666/2933 SDRAM",
+            "ram_max": "64GB",
+            "storage_slots": "1 x M.2 2230 (for WLAN), 2 x M.2 2242/2280 (for storage), 1 x 2.5\" HDD bay",
+            "screen_options": "N/A",
+            "webcam": "N/A",
+            "biometrics": "N/A",
+            "weight": "1.42 kg (3.13 lbs)",
+            "wifi_bt": "Optional Intel Wi-Fi 6 AX201 (2x2) and Bluetooth 5 combo",
+            "security_tpm": "TPM 2.0",
+            "has_wwan": false,
+            "wwan_modules": [],
+            "sim_slot_type": "N/A",
+            "has_esim": false,
+            "power_watts": "65W/90W",
+            "power_connector": "7.4*5.0mm",
+            "power_pn": "L89697-001 (150W AC Adapter PFC Smart 7.4mm Slim)",
+            "battery_info": "N/A",
+            "expert_notes": "The HP EliteDesk 800 G6 Mini is a compact desktop designed for business use, offering a range of configuration options. It supports up to 64GB of RAM and has multiple storage slots. Security features include TPM 2.0 and HP Wolf Security. It supports Windows 10 and 11. WWAN is not a standard feature.",
+            "pdf_links": [
+                "(https://media.flixcar.com/f360cdn/HP-5198537164-4aa7-7817eeap.pdf)"
             ]
         }
     }
