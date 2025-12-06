@@ -772,38 +772,6 @@
                 "(https://psref.lenovo.com/syspool/Sys/PDF/ThinkPad/ThinkPad_T14s_Gen_3_Intel/ThinkPad_T14s_Gen_3_Intel_Spec.pdf)"
             ]
         },
-        "ThinkCentre M70q Tiny Gen 2/11DU": {
-            "type": "Mini PC",
-            "cpu": "10th Generation Intel Core i3/i5/i7/i9",
-            "gpu": "Integrated Intel UHD Graphics 630",
-            "sub_model": "Gen 2/11DU",
-            "lifecycle": "Discontinued",
-            "support_os": "Windows 10 Pro, Windows 11 Pro",
-            "ports": "Front: 2 x USB 3.2 Gen 2, 1 x USB-C 3.2 Gen 1, headphone/microphone combo. Rear: 3 x USB 3.2 Gen 1, 1 x DisplayPort, 1 x HDMI, 1 x RJ45",
-            "ram_soldered": "No (Upgradable)",
-            "ram_slots": "2",
-            "ram_type": "DDR4 2666MHz SO-DIMM",
-            "ram_max": "64GB",
-            "storage_slots": "1x M.2 SSD NvmeUp ,Optional 1x 2.5\" HDD",
-            "screen_options": "None",
-            "webcam": "No camera",
-            "biometrics": "No fingerprint reader",
-            "weight": "1.25 kg (2.76 lbs)",
-            "wifi_bt": "Optional Intel WiFi 6 AX201 802.11AX",
-            "security_tpm": "TPM 2.0",
-            "has_wwan": false,
-            "wwan_modules": [],
-            "sim_slot_type": "eSIM",
-            "has_esim": false,
-            "power_watts": "65W",
-            "power_connector": "Slim Tip",
-            "power_pn": "Various, check the back of the PC for input",
-            "battery_info": "No battery",
-            "expert_notes": "The M70q Tiny is a compact desktop PC known for its enterprise-level performance and upgradeability. It supports up to three monitors. It is compatible with Windows 10 and Windows 11. It is also tested against military-grade requirements for durability",
-            "pdf_links": [
-                "(https://psref.lenovo.com/syspool/Sys/PDF/ThinkCentre/ThinkCentre_M70q_Gen_2/ThinkCentre_M70q_Gen_2_Spec.pdf)"
-            ]
-        },
         "ThinkCentre M70q Tiny Gen 2": {
             "type": "Mini PC",
             "cpu": "Up to 11th Gen Intel Core i9",
@@ -832,6 +800,38 @@
             "power_pn": "4X20E53336",
             "battery_info": "No battery",
             "expert_notes": "Tool-less access for SSD and memory module. Supports up to 3 independent monitors.",
+            "pdf_links": [
+                "(https://psref.lenovo.com/syspool/Sys/PDF/ThinkCentre/ThinkCentre_M70q_Gen_2/ThinkCentre_M70q_Gen_2_Spec.pdf)"
+            ]
+        },
+        "ThinkCentre M70q Tiny Gen 1": {
+            "type": "Mini PC",
+            "cpu": "10th Generation Intel Core i3/i5/i7/i9",
+            "gpu": "Integrated Intel UHD Graphics 630",
+            "sub_model": "Gen 1",
+            "lifecycle": "Discontinued",
+            "support_os": "Windows 10 Pro, Windows 11 Pro",
+            "ports": "Front: 2 x USB 3.2 Gen 2, 1 x USB-C 3.2 Gen 1, headphone/microphone combo. Rear: 3 x USB 3.2 Gen 1, 1 x DisplayPort, 1 x HDMI, 1 x RJ45",
+            "ram_soldered": "No (Upgradable)",
+            "ram_slots": "2",
+            "ram_type": "DDR4 2666MHz SO-DIMM",
+            "ram_max": "64GB",
+            "storage_slots": "1x M.2 SSD NvmeUp ,Optional 1x 2.5\" HDD",
+            "screen_options": "None",
+            "webcam": "No camera",
+            "biometrics": "No fingerprint reader",
+            "weight": "1.25 kg (2.76 lbs)",
+            "wifi_bt": "Optional Intel WiFi 6 AX201 802.11AX",
+            "security_tpm": "TPM 2.0",
+            "has_wwan": false,
+            "wwan_modules": [],
+            "sim_slot_type": "eSIM",
+            "has_esim": false,
+            "power_watts": "65W",
+            "power_connector": "Slim Tip",
+            "power_pn": "Various, check the back of the PC for input",
+            "battery_info": "No battery",
+            "expert_notes": "The M70q Tiny is a compact desktop PC known for its enterprise-level performance and upgradeability. It supports up to three monitors. It is compatible with Windows 10 and Windows 11. It is also tested against military-grade requirements for durability",
             "pdf_links": [
                 "(https://psref.lenovo.com/syspool/Sys/PDF/ThinkCentre/ThinkCentre_M70q_Gen_2/ThinkCentre_M70q_Gen_2_Spec.pdf)"
             ]
