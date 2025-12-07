@@ -7,17 +7,17 @@ import re
 # --- 1. PAGE CONFIGURATION ---
 st.set_page_config(page_title="Hardware Catalog", layout="wide", page_icon="🛍️")
 
-# --- 2. CUSTOM CSS (VIBRANT GLASSMORPHISM THEME) ---
+# --- 2. CUSTOM CSS (COLORFUL DARK THEME) ---
 st.markdown("""
 <style>
-    /* 1. VIBRANT BACKGROUND */
+    /* 1. BACKGROUND WITH BRAND COLORS */
     .stApp {
         background-color: #0e1117; /* Deep base color */
-        /* Colorful Glows in Top-Left (Blue) and Bottom-Right (Pink) */
+        /* Subtle Gradient Glows (Blue Top-Left, Pink Bottom-Right) */
         background-image: 
-            radial-gradient(circle at 0% 0%, rgba(41, 182, 246, 0.25) 0%, transparent 40%), 
-            radial-gradient(circle at 100% 100%, rgba(236, 64, 122, 0.25) 0%, transparent 40%);
-        background-attachment: fixed; /* Keeps glow in place when scrolling */
+            radial-gradient(circle at 0% 0%, rgba(41, 182, 246, 0.15) 0%, transparent 50%), 
+            radial-gradient(circle at 100% 100%, rgba(236, 64, 122, 0.15) 0%, transparent 50%);
+        background-attachment: fixed;
         color: #e6edf3;
     }
     
@@ -28,29 +28,24 @@ st.markdown("""
 
     /* 2. SEARCH BAR & INPUTS */
     div[data-testid="stTextInput"] input {
-        background-color: rgba(1, 4, 9, 0.8) !important; /* Semi-transparent black */
-        border: 1px solid rgba(48, 54, 61, 0.8) !important;
-        color: #ffffff !important;
+        background-color: #010409 !important; /* Pitch Black for contrast */
+        border: 1px solid #30363d !important;
+        color: #ffffff !important; /* Bright White */
         border-radius: 50px;
-        backdrop-filter: blur(5px);
     }
     div[data-testid="stTextInput"] input::placeholder {
         color: #8b949e !important;
     }
-    div[data-testid="stTextInput"] input:focus {
-        border-color: #29B6F6 !important;
-        box-shadow: 0 0 15px rgba(41, 182, 246, 0.3);
-    }
     
-    /* 3. DROPDOWN MENUS */
+    /* 3. DROPDOWN MENUS (Fixed Visibility) */
     .stSelectbox div[data-baseweb="select"] > div,
     .stMultiSelect div[data-baseweb="select"] > div {
-        background-color: rgba(1, 4, 9, 0.8) !important;
-        border-color: rgba(48, 54, 61, 0.8) !important;
+        background-color: #010409 !important;
+        border-color: #30363d !important;
         color: #ffffff !important;
     }
     div[data-baseweb="popover"], div[data-baseweb="menu"], ul[role="listbox"] {
-        background-color: #161b22 !important; /* Solid background for dropdown list */
+        background-color: #161b22 !important;
         border: 1px solid #30363d !important;
     }
     div[data-baseweb="option"], li[role="option"] {
@@ -62,88 +57,75 @@ st.markdown("""
         color: #ffffff !important;
     }
     
-    /* 4. GLASS PRODUCT CARDS */
+    /* 4. PRODUCT CARDS (Glass Effect) */
     .product-card-container {
-        /* Glass Effect */
-        background-color: rgba(22, 27, 34, 0.6); 
-        backdrop-filter: blur(12px);
-        -webkit-backdrop-filter: blur(12px);
-        
+        background-color: rgba(22, 27, 34, 0.7); /* Semi-transparent dark */
         border: 1px solid rgba(255, 255, 255, 0.1);
-        border-radius: 16px;
-        padding: 24px;
+        border-radius: 12px;
+        padding: 20px;
         height: 100%;
-        min-height: 230px;
+        min-height: 220px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
-        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        transition: transform 0.2s, border-color 0.2s;
+        backdrop-filter: blur(5px);
     }
     .product-card-container:hover {
-        border-color: #EC407A; /* Pink Glow on Hover */
-        box-shadow: 0 10px 30px rgba(236, 64, 122, 0.15);
+        border-color: #29B6F6;
         transform: translateY(-5px);
-        background-color: rgba(22, 27, 34, 0.8); 
+        background-color: rgba(22, 27, 34, 0.9);
     }
     
-    .card-brand { color: #8b949e !important; font-size: 0.85em; text-transform: uppercase; font-weight: bold; letter-spacing: 1px; }
-    .card-model { color: #ffffff !important; font-size: 1.4em; font-weight: 800; margin: 5px 0; }
-    .sub-model { color: #8b949e !important; font-size: 0.9em; margin-bottom: 15px; }
+    .card-brand { color: #8b949e !important; font-size: 0.85em; text-transform: uppercase; font-weight: bold; }
+    .card-model { color: #ffffff !important; font-size: 1.3em; font-weight: bold; margin: 5px 0; }
+    .sub-model { color: #8b949e !important; font-size: 0.9em; margin-bottom: 10px; }
     
     /* 5. TAGS & BADGES */
     .spec-tag {
         display: inline-block;
-        padding: 4px 10px;
-        border-radius: 8px;
+        padding: 4px 8px;
+        border-radius: 6px;
         background-color: rgba(255, 255, 255, 0.05);
         color: #c9d1d9 !important;
         font-size: 0.8em;
         margin-right: 6px;
         margin-bottom: 6px;
         border: 1px solid rgba(255, 255, 255, 0.1);
-        font-weight: 600;
     }
-    /* Bright Neon Colors for Tags */
-    .ram-ok { color: #4ade80 !important; border-color: rgba(74, 222, 128, 0.4); background: rgba(74, 222, 128, 0.1); } 
-    .ram-warn { color: #fbbf24 !important; border-color: rgba(251, 191, 36, 0.4); background: rgba(251, 191, 36, 0.1); }
-    .ram-bad { color: #f472b6 !important; border-color: rgba(244, 114, 182, 0.4); background: rgba(244, 114, 182, 0.1); }
-    .wwan-tag { color: #38bdf8 !important; border-color: rgba(56, 189, 248, 0.4); background: rgba(56, 189, 248, 0.1); }
+    .ram-ok { color: #3fb950 !important; border-color: #3fb950; } 
+    .ram-warn { color: #d29922 !important; border-color: #d29922; }
+    .ram-bad { color: #f85149 !important; border-color: #f85149; }
+    .wwan-tag { color: #58a6ff !important; border-color: #58a6ff; }
     
     /* 6. HERO HEADER */
     .hero-container {
         text-align: center;
-        padding: 50px 20px;
-        /* Glass Header */
-        background: rgba(13, 17, 23, 0.3);
-        backdrop-filter: blur(5px);
-        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        padding: 40px 20px;
+        background-color: rgba(22, 27, 34, 0.5);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
         margin-bottom: 30px;
-        border-radius: 0 0 30px 30px;
+        border-radius: 0 0 20px 20px;
     }
     .hero-title {
-        font-size: 3.5em;
-        font-weight: 900;
-        /* Gradient Text: Blue -> White -> Pink */
-        background: linear-gradient(135deg, #29B6F6 0%, #ffffff 50%, #EC407A 100%);
+        /* Gradient Text */
+        background: linear-gradient(90deg, #29B6F6, #EC407A);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        margin-bottom: 15px;
-        text-shadow: 0 0 30px rgba(41, 182, 246, 0.2);
+        font-size: 3em;
+        font-weight: 800;
+        margin-bottom: 10px;
     }
     
-    /* 7. BUTTONS */
-    .stButton button {
-        background: linear-gradient(90deg, #1f2937 0%, #111827 100%) !important;
-        border: 1px solid #374151 !important;
-        color: white !important;
-        border-radius: 10px !important;
-        font-weight: 600 !important;
-    }
-    .stButton button:hover {
-        background: linear-gradient(90deg, #29B6F6 0%, #29B6F6 100%) !important;
-        border-color: #29B6F6 !important;
-        box-shadow: 0 0 15px rgba(41, 182, 246, 0.4);
+    /* 7. DETAIL VIEW HEADERS */
+    .card-section-header {
+        color: #29B6F6 !important;
+        border-bottom: 1px solid #30363d;
+        padding-bottom: 5px;
+        margin-top: 20px;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 0.9em;
     }
 </style>
 """, unsafe_allow_html=True)
@@ -167,18 +149,18 @@ def get_ram_status_details(row):
     
     if "soldered" in slots_str or "no slots" in slots_str or slots_str.strip().startswith("0"):
         if "1 slot" in slots_str or "+" in slots_str or "partial" in status_str:
-             return "orange", "🟠 Partial"
-        return "red", "🔴 Soldered"
+             return "orange", "RAM: Partial"
+        return "red", "RAM: Soldered"
 
-    if "partial" in status_str: return "orange", "🟠 Partial"
-    if "yes" in status_str or "soldered" in status_str: return "red", "🔴 Soldered"
-    return "green", "🟢 Upgradable"
+    if "partial" in status_str: return "orange", "RAM: Partial"
+    if "yes" in status_str or "soldered" in status_str: return "red", "RAM: Soldered"
+    return "green", "RAM: Upgradable"
 
 def get_ram_status_class(row):
     color, _ = get_ram_status_details(row)
-    if color == "orange": return "ram-warn", "Partial"
-    if color == "red": return "ram-bad", "Soldered"
-    return "ram-ok", "Upgradable"
+    if color == "orange": return "ram-warn"
+    if color == "red": return "ram-bad"
+    return "ram-ok"
 
 def format_ports_with_icons(ports_text):
     if not ports_text: return ""
@@ -251,14 +233,14 @@ if st.session_state.selected_model_id is None:
     
     with f_col1:
         all_brands = sorted(df['brand'].unique())
-        sel_brand = st.multiselect("🏷️ Brand", all_brands, placeholder="Brand")
+        sel_brand = st.multiselect("🏷️ Brand", all_brands, placeholder="Filter by Brand")
         
     with f_col2:
         all_types = sorted(df['type'].unique())
-        sel_type = st.multiselect("💻 Type", all_types, placeholder="Type")
+        sel_type = st.multiselect("💻 Type", all_types, placeholder="Filter by Type")
 
     with f_col3:
-        sel_features = st.multiselect("✨ Features", ["WWAN (SIM)", "eSIM", "Upgradable RAM", "Dedicated GPU"], placeholder="Features")
+        sel_features = st.multiselect("✨ Features", ["WWAN (SIM)", "eSIM", "Upgradable RAM", "Dedicated GPU"], placeholder="Filter by Feature")
 
     st.markdown("---")
 
@@ -280,8 +262,8 @@ if st.session_state.selected_model_id is None:
          filtered_df = filtered_df[filtered_df['gpu'].astype(str).str.contains(gpu_kw, case=False, na=False)]
     if "Upgradable RAM" in sel_features:
         def check_ram(r):
-            cls, _ = get_ram_status_class(r)
-            return cls != "ram-bad"
+            cls, _ = get_ram_status_details(r)
+            return cls != "red"
         filtered_df = filtered_df[filtered_df.apply(check_ram, axis=1)]
 
     # --- SORTING ---
@@ -300,14 +282,17 @@ if st.session_state.selected_model_id is None:
             cols = st.columns(cols_per_row)
             for idx, (index, item) in enumerate(row_items.iterrows()):
                 with cols[idx]:
-                    ram_cls, ram_txt = get_ram_status_class(item)
+                    # --- RAM TEXT & COLOR LOGIC ---
+                    _, ram_text = get_ram_status_details(item)
+                    ram_cls = get_ram_status_class(item)
+                    
                     cpu_preview = format_cpu_preview(item.get('cpu'))
                     
                     wwan_badge = ""
                     if item.get('has_wwan'):
                         wwan_badge = f'<span class="spec-tag wwan-tag">📡 4G/5G</span>'
 
-                    # CARD HTML - NO INDENTATION TO FIX </div> BUG
+                    # --- FIXED CARD HTML (NO INDENTATION) ---
                     card_html = (
                         f'<div class="product-card-container">'
                         f'<div>'
@@ -317,7 +302,7 @@ if st.session_state.selected_model_id is None:
                         f'</div>'
                         f'<div>'
                         f'<span class="spec-tag" title="{item.get("cpu")}">{cpu_preview}</span>'
-                        f'<span class="spec-tag {ram_cls}">{ram_txt}</span>'
+                        f'<span class="spec-tag {ram_cls}">{ram_text}</span>'
                         f'{wwan_badge}'
                         f'</div>'
                         f'</div>'
@@ -412,8 +397,17 @@ else:
             st.markdown(f"**🔋 Battery:** {row.get('battery_info')}")
 
         if row.get('wwan_modules'):
-            st.markdown("### 📋 Compatible Modules")
-            st.dataframe(pd.DataFrame(row['wwan_modules']), use_container_width=True, hide_index=True)
+            st.markdown("### 📋 WWAN Compatible Modules")
+            # --- TABLE FILTERING LOGIC ---
+            df_modules = pd.DataFrame(row['wwan_modules'])
+            
+            # Columns to KEEP
+            desired_cols = ["module_name", "part_number", "esim_support", "tray_pn"]
+            
+            # Ensure columns exist before selecting
+            final_cols = [c for c in desired_cols if c in df_modules.columns]
+            
+            st.dataframe(df_modules[final_cols], use_container_width=True, hide_index=True)
 
         if row.get('expert_notes'):
             st.markdown(f"""<div class="warning-box" style="background-color: #2d1b1b; padding: 10px; border-radius: 5px; color: #ffcccb !important;"><strong>⚠️ CONSULTANT NOTES:</strong><br>{row.get('expert_notes')}</div>""", unsafe_allow_html=True)
