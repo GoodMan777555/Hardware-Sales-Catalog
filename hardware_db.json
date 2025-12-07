@@ -978,6 +978,38 @@
             "pdf_links": [
                 "(https://media.flixcar.com/f360cdn/HP-5198537164-4aa7-7817eeap.pdf)"
             ]
+        },
+        "Elite 600 G9 SFF": {
+            "type": "SFF",
+            "cpu": "12th and 13th Gen Intel Core Processors",
+            "gpu": "Integrated Intel UHD Graphics, Optional discrete graphic card options (PCIe Gen4 x16), up to Nvidia® T400 graphics cards, Optional AMD Radeon™ RX6300 graphics",
+            "sub_model": "Gen9",
+            "lifecycle": "Available",
+            "support_os": "Windows 11 Pro, Windows 10",
+            "ports": "Front: (4) SuperSpeed USB Type-A 10Gbps signaling rate ports; (1) SuperSpeed USB Type-C® 20Gbps signaling rate port; (1) Combo Audio Jack; (1) SD Card reader (optional). Rear: (1) audio Line-out; (1) RJ-45; (3) SuperSpeed USB Type-A 5Gbps signaling rate ports; (3) USB Type-A 480Mbps signaling rate ports; (2) DisplayPort™ 1.4a; (1) HDMI 1.4; (1) Choice of Serial/DP/HDMI 2.0b/VGA, dual USB-A (5Gbps) or USB-C® or Thunderbolt™ (via PCIe), (1) Serial/PS/2 optional via PCIe",
+            "ram_soldered": "No (Upgradable)",
+            "ram_slots": "4",
+            "ram_type": "DDR5",
+            "ram_max": "128 GB",
+            "storage_slots": "Optional - Up to two PCIe Gen4 SSDs, two HDDs. (2) 3.5”, (1) removable M.2 SSD20 or SATA HDD bay or (1) 9.5mm slim ODD",
+            "screen_options": "N/A",
+            "webcam": "N/A",
+            "biometrics": "N/A",
+            "weight": "5.04 kg, 11.11 lbs",
+            "wifi_bt": "Optional - Intel Wi-Fi 6E AX211 (2x2) and Bluetooth 5.3",
+            "security_tpm": "TPM 2.0, HP Sure Start Gen7, HP Sure Run Gen5",
+            "has_wwan": false,
+            "wwan_modules": [],
+            "sim_slot_type": "N/A",
+            "has_esim": false,
+            "power_watts": "260 W, 400 W",
+            "power_connector": "Line in",
+            "power_pn": "M76034-004, HP 702457-001",
+            "battery_info": "N/A",
+            "expert_notes": "The HP Elite SFF 600 G9 supports up to 128GB of DDR5 RAM. It has an Intel I219-LM NIC. The HP Elite 600 G9 SFF requires an Intel 13th Gen processor to support Wi-Fi 6E.",
+            "pdf_links": [
+                "(https://h20195.www2.hp.com/v2/getpdf.aspx/c08017710.pdf)"
+            ]
         }
     }
 }
