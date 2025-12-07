@@ -22,34 +22,24 @@
             "has_wwan": true,
             "wwan_modules": [
                 {
-                    "module_name": "Dell Wireless DW5821e (Qualcomm Snapdragon X20 LTE-A)",
-                    "part_number": "0X7N41",
-                    "network_speed": "LTE-A Cat 16 (up to 1 Gbps DL, 150 Mbps UL)",
-                    "esim_support": "Yes",
-                    "physical_sim": "Yes",
-                    "tray_pn": "Not readily available as standalone P/N (standard Nano-SIM tray)",
-                    "status": "Available as a factory option, Dell Whitelisted"
-                },
-                {
-                    "module_name": "Dell Wireless DW5930e (Qualcomm Snapdragon X55 Global 5G)",
-                    "part_number": "0V341K (also seen as 0D5D1C)",
-                    "network_speed": "5G NR Sub-6 GHz / LTE-A Pro Cat 22 (up to 7 Gbps DL for 5G, 2.5 Gbps DL for LTE)",
-                    "esim_support": "Yes",
-                    "physical_sim": "Yes",
-                    "tray_pn": "Not readily available as standalone P/N (standard Nano-SIM tray)",
-                    "status": "Available as a factory option, Dell Whitelisted"
+                    "module_name": "Dell OEM Wireless 5820E (DW5820e)",
+                    "part_number": "284DC",
+                    "network_speed": null,
+                    "esim_support": null,
+                    "physical_sim": null,
+                    "tray_pn": "C4FJ0",
+                    "status": null
                 }
             ],
             "sim_slot_type": "Nano-SIM",
-            "has_esim": true,
+            "has_esim": false,
             "power_watts": "65W or 90W",
             "power_connector": "7.4 mm barrel-type or USB-C (Power Delivery)",
             "power_pn": "Examples: 65W Barrel (0MGJN9, 0GG2WG), 65W USB-C (0K00F5), 90W Barrel (0RN7NW), 90W USB-C (0M0H25)",
-            "battery_info": "3-cell, 42 Wh 'smart' lithium-ion or 4-cell, 63 Wh 'smart' lithium-ion, with ExpressCharge and Extend Cycle-life support.",
+            "battery_info": "3-cell, 42 Wh 'smart' lithium-ion or 4-cell, 63 Wh (RJ40G) 'smart' lithium-ion, with ExpressCharge and Extend Cycle-life support.",
             "expert_notes": "WWAN functionality requires factory-installed antennas; retrofitting can be complex if antennas are missing. Only Dell-whitelisted WWAN modules with specific Dell part numbers are guaranteed to work due to BIOS restrictions. The 2.5-inch storage bay is optional and may not be present with larger batteries or specific configurations. Thermal performance with 11th Gen Intel CPUs can be a consideration under heavy load. Thunderbolt 4 ports provide extensive connectivity options.",
             "pdf_links": [
-                "[Dell Latitude 5520 Setup and Specifications](https://www.dell.com/support/manuals/en-us/latitude-15-5520-laptop/latitude_5520_setup_specs/specifications?guid=guid-94303328-9107-a37a-6b8015331666&lang=en-us)",
-                "[Dell Latitude 5520 Service Manual](https://www.dell.com/support/manuals/en-us/latitude-15-5520-laptop/latitude_5520_service_manual/before-you-begin?guid=guid-e02c74d8-79c2-4a7f-8d96-c66708605380&lang=en-us)"
+                "(https://objects.icecat.biz/objects/mmo_96025703_1639151391_0556_83.pdf)"
             ]
         },
         "Latitude 5490": {
