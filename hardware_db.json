@@ -912,6 +912,66 @@
             "pdf_links": [
                 "(https://psref.lenovo.com/syspool/Sys/PDF/ThinkPad/ThinkPad_T14s_Gen_2_Intel/ThinkPad_T14s_Gen_2_Intel_Spec.pdf)"
             ]
+        },
+        "ThinkPad T14 Gen1": {
+            "type": "Laptop",
+            "cpu": "10th Generation Intel Core i5/i7 (Intel) or AMD Ryzen 5/7 Pro (AMD)",
+            "gpu": "Integrated Intel UHD Graphics, Optional NVIDIA GeForce MX330 (2GB GDDR5, 25W), AMD Radeon Graphics (AMD models)",
+            "sub_model": "Gen 1",
+            "lifecycle": "Discontinued",
+            "support_os": "Windows 10 Pro, Windows 10 Home, Linux, Ubuntu Linux",
+            "ports": "2x USB 3.2 Gen 1 (1x Always On), 1x USB-C 3.2 Gen 1 (support data transfer, Power Delivery and DisplayPort™ 1.2), 1x USB-C 3.2 Gen 2 / Thunderbolt™ 3 (support data transfer, Power Delivery and DisplayPort 1.2), HDMI, ethernet (RJ-45), nano-SIM card slot (WWAN models only), audio combo jack, microSD card reader, side docking connector, optional smart card reader, security keyhole",
+            "ram_soldered": "Partial (1 Slot + Soldered)",
+            "ram_slots": "One memory soldered to systemboard, one DDR4 SO-DIMM slot",
+            "ram_type": "DDR4-2666 (Intel), DDR4-3200 (AMD)",
+            "ram_max": "Up to 40GB (Intel), Up to 48GB (Intel, with 16GB soldered), Up to 24GB (AMD, 8GB soldered + 16GB SO-DIMM)",
+            "storage_slots": "One drive, 1x M.2 2280 SSD or 1x M.2 2242 SSD. M.2 2280 SSD up to 2TB. M.2 2242 SSD up to 128GB",
+            "screen_options": "14-inch options include HD (1366x768) TN, Full HD (1920x1080) IPS, 4K UHD (3840x2160) IPS",
+            "webcam": "HD 720p with ThinkShutter privacy cover , Optional IR & HD 720p hybrid, with ThinkShutter, fixed focus",
+            "biometrics": "Optional touch-style fingerprint reader with match-on-chip technology, Optional IR camera for Windows Hello facial recognition",
+            "weight": "Starting at 1.46 kg (3.23 lbs)",
+            "wifi_bt": "Intel Wi-Fi 6 AX201, 802.11ax 2x2 Wi-Fi + Bluetooth 5.1, Intel Wi-Fi 6 AX200, 802.11ax 2x2 Wi-Fi + Bluetooth 5.1",
+            "security_tpm": "Firmware TPM 2.0 or Discrete TPM 2.0, TCG certified",
+            "has_wwan": true,
+            "wwan_modules": [
+                {
+                    "module_name": "Wireless,CMB,FBC,L850-GL\n  CN",
+                    "part_number": "02HK712",
+                    "network_speed": null,
+                    "esim_support": null,
+                    "physical_sim": null,
+                    "tray_pn": "02HK996",
+                    "status": null
+                },
+                {
+                    "module_name": "Wireless,\n  CMB, FBC, L850-GL",
+                    "part_number": "01AX792",
+                    "network_speed": null,
+                    "esim_support": null,
+                    "physical_sim": null,
+                    "tray_pn": "02HK996",
+                    "status": null
+                },
+                {
+                    "module_name": "WIRELESS\n  Wireless, CMB, FBC, L860 V2 FW",
+                    "part_number": "5W10V25790",
+                    "network_speed": null,
+                    "esim_support": null,
+                    "physical_sim": null,
+                    "tray_pn": "02HK996",
+                    "status": null
+                }
+            ],
+            "sim_slot_type": "Nano-SIM / eSIM",
+            "has_esim": false,
+            "power_watts": "45W, 65W",
+            "power_connector": "USB-C",
+            "power_pn": "Varies",
+            "battery_info": "45Wh or 50Wh Lithium-Ion Polymer",
+            "expert_notes": "WWAN requires antenna installation and SIM tray (if not present).  Check the Lenovo support site for compatible parts using the MTM or serial number.",
+            "pdf_links": [
+                "(https://psref.lenovo.com/syspool/Sys/PDF/ThinkPad/ThinkPad_T14_Gen_1_Intel/ThinkPad_T14_Gen_1_Intel_Spec.pdf)"
+            ]
         }
     },
     "HP": {
