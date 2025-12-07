@@ -913,7 +913,7 @@
                 "(https://psref.lenovo.com/syspool/Sys/PDF/ThinkPad/ThinkPad_T14s_Gen_2_Intel/ThinkPad_T14s_Gen_2_Intel_Spec.pdf)"
             ]
         },
-        "ThinkPad T14 Gen1": {
+        "ThinkPad T14 Gen 1": {
             "type": "Laptop",
             "cpu": "10th Generation Intel Core i5/i7 (Intel) or AMD Ryzen 5/7 Pro (AMD)",
             "gpu": "Integrated Intel UHD Graphics, Optional NVIDIA GeForce MX330 (2GB GDDR5, 25W), AMD Radeon Graphics (AMD models)",
