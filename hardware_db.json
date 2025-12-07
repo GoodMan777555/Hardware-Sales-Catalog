@@ -835,6 +835,93 @@
             "pdf_links": [
                 "(https://psref.lenovo.com/syspool/Sys/PDF/ThinkCentre/ThinkCentre_M70q_Gen_2/ThinkCentre_M70q_Gen_2_Spec.pdf)"
             ]
+        },
+        "ThinkPad T14s Gen 2": {
+            "type": "Laptop",
+            "cpu": "Intel Core i7-1185G7 / i7-1165G7 / i5-1145G7 / i5-1135G7 or AMD Ryzen 3/5/7 Processor",
+            "gpu": "Integrated Intel Iris Xe Graphics G7 (96EU/80EU) / AMD Radeon RX Vega 7",
+            "sub_model": "Gen 2 (Intel/AMD)",
+            "lifecycle": "Available",
+            "support_os": "Windows 10 Pro 64 Bit",
+            "ports": "2x USB-C 3.2 Gen 2 (support data transfer, Power Delivery and DisplayPort™ 1.4), 1x USB 3.2 Gen 1, 1x USB 3.2 Gen 1 (Always On), HDMI 2.0, headphone/microphone combo jack",
+            "ram_soldered": "No (Upgradable)",
+            "ram_slots": "Soldered to systemboard, no slots",
+            "ram_type": "LPDDR4x-4266",
+            "ram_max": "32GB",
+            "storage_slots": "One M.2 2280 PCIe NVMe, PCIe x4",
+            "screen_options": "14\" FHD (1920x1080) IPS, 400 nits, Anti-glare.  Also available with touch and privacy screen options",
+            "webcam": "HD 720p + IR Hybrid with Privacy Shutter",
+            "biometrics": "Fingerprint Reader (integrated in power button)",
+            "weight": "Starting at 1.28 kg (2.83 lbs)",
+            "wifi_bt": "Intel Wi-Fi 6 AX200, 802.11ax 2x2 Wi-Fi + Bluetooth 5.1",
+            "security_tpm": "Discrete TPM 2.0",
+            "has_wwan": true,
+            "wwan_modules": [
+                {
+                    "module_name": null,
+                    "part_number": "5W10V25859",
+                    "network_speed": null,
+                    "esim_support": null,
+                    "physical_sim": null,
+                    "tray_pn": "5M20Z56259",
+                    "status": null
+                },
+                {
+                    "module_name": null,
+                    "part_number": "5W10V25816",
+                    "network_speed": null,
+                    "esim_support": null,
+                    "physical_sim": null,
+                    "tray_pn": "5M20Z56259",
+                    "status": null
+                },
+                {
+                    "module_name": null,
+                    "part_number": "5W10V25771",
+                    "network_speed": null,
+                    "esim_support": null,
+                    "physical_sim": null,
+                    "tray_pn": "5M20Z56259",
+                    "status": null
+                },
+                {
+                    "module_name": null,
+                    "part_number": "5W10V25794",
+                    "network_speed": null,
+                    "esim_support": null,
+                    "physical_sim": null,
+                    "tray_pn": "5M20Z56259",
+                    "status": null
+                },
+                {
+                    "module_name": null,
+                    "part_number": "5W10V25768",
+                    "network_speed": null,
+                    "esim_support": null,
+                    "physical_sim": null,
+                    "tray_pn": "5M20Z56259",
+                    "status": null
+                },
+                {
+                    "module_name": null,
+                    "part_number": "5W10V25820",
+                    "network_speed": null,
+                    "esim_support": "Yes",
+                    "physical_sim": null,
+                    "tray_pn": "5M20Z56259",
+                    "status": null
+                }
+            ],
+            "sim_slot_type": "eSIM/Nano-SIM",
+            "has_esim": true,
+            "power_watts": "45W / 65W",
+            "power_connector": "USB-C",
+            "power_pn": "Various",
+            "battery_info": "Integrated 57Wh",
+            "expert_notes": "WWAN configuration may require antenna and SIM tray/eSIM card depending on the specific model. Check the Lenovo Parts Lookup with your serial number for compatible parts",
+            "pdf_links": [
+                "(https://psref.lenovo.com/syspool/Sys/PDF/ThinkPad/ThinkPad_T14s_Gen_2_Intel/ThinkPad_T14s_Gen_2_Intel_Spec.pdf)"
+            ]
         }
     },
     "HP": {
