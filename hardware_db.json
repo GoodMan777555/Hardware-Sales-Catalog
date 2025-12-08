@@ -143,6 +143,57 @@
             "pdf_links": [
                 "(https://objects.icecat.biz/objects/mmo_93831779_1631542557_247_713.pdf)"
             ]
+        },
+        "Latitude 5320 2-in-1": {
+            "type": "Laptop",
+            "cpu": "Intel Core i3/i5/i7 (11th Generation)",
+            "gpu": "Intel UHD Graphics (with i3/i5/i7 and single-channel memory), Intel Iris Xe Graphics (with i5/i7 and dual-channel memory)",
+            "sub_model": "2021",
+            "lifecycle": "Active",
+            "support_os": "Windows 11, Windows 10, Ubuntu 20.04 LTS",
+            "ports": "USB 3.2 Gen 1, USB 3.2 Gen 1 with PowerShare, Thunderbolt 4 with DisplayPort Alt Mode/USB4/Power Delivery, HDMI 2.0, microSD card slot",
+            "ram_soldered": "Yes (Soldered)",
+            "ram_slots": "Memory soldered to systemboard",
+            "ram_type": "DDR4 3200 MHz",
+            "ram_max": "32 GB max",
+            "storage_slots": "M.2 2230/2280, PCIe x4 NVMe",
+            "screen_options": "13.3-inch FHD (1920x1080) IPS touchscreen",
+            "webcam": "Yes",
+            "biometrics": "Fingerprint reader (optional)",
+            "weight": "1.32 kg (2.91 lbs)",
+            "wifi_bt": "Wi-Fi 6, Bluetooth 5.2",
+            "security_tpm": "TPM 2.0",
+            "has_wwan": true,
+            "wwan_modules": [
+                {
+                    "module_name": "Intel XMM 7360 Global LTE-Advanced (DW5820e) CAT9",
+                    "part_number": "284DC ",
+                    "network_speed": "Unknown",
+                    "esim_support": "no",
+                    "physical_sim": "",
+                    "tray_pn": "04CG3NEW ",
+                    "status": "Available"
+                },
+                {
+                    "module_name": " 5820E DW5820e Mobile Broadband 4G LTE",
+                    "part_number": "FMK7H ",
+                    "network_speed": null,
+                    "esim_support": "Yes",
+                    "physical_sim": null,
+                    "tray_pn": "04CG3NEW ",
+                    "status": null
+                }
+            ],
+            "sim_slot_type": "Nano-SIM / eSIM",
+            "has_esim": true,
+            "power_watts": "45W, 65W, 90W",
+            "power_connector": "USB Type-C",
+            "power_pn": "Unknown",
+            "battery_info": "3-cell 42 Wh or 4-cell 63 Wh Li-ion battery (7FMXV)",
+            "expert_notes": "Memory is soldered to the motherboard. WWAN module compatibility may be limited to Dell-branded modules.",
+            "pdf_links": [
+                "(https://objects.icecat.biz/objects/mmo_96025782_1664293933_5855_21283.pdf)"
+            ]
         }
     },
     "Lenovo": {
