@@ -1121,6 +1121,57 @@
             "pdf_links": [
                 "(https://h20195.www2.hp.com/v2/getpdf.aspx/c08017710.pdf)"
             ]
+        },
+        "HP EliteBook 840 G7": {
+            "type": "Laptop",
+            "cpu": "10th Generation Intel Core i5/i7",
+            "gpu": "Intel UHD Graphics",
+            "sub_model": "G7",
+            "lifecycle": "Active",
+            "support_os": "Windows 10 Pro 64, Windows 10 Home 64, FreeDOS",
+            "ports": "2 x USB 3.1 Type-C with Thunderbolt support, 2 x USB 3.1 Gen 1 (1 charging), 1 x headphone/microphone combo, 1 x HDMI 1.4, 1 x AC power",
+            "ram_soldered": "No (Upgradable)",
+            "ram_slots": "2 SODIMM",
+            "ram_type": "DDR4-2666 SDRAM",
+            "ram_max": "64 GB",
+            "storage_slots": "Up to 1 TB PCIe Gen3x4 NVMe SSD",
+            "screen_options": "14\" FHD (1920x1080) IPS, options include anti-glare, touch, and HP Sure View Reflect",
+            "webcam": "720p HD camera, optional IR camera for Windows Hello",
+            "biometrics": "Fingerprint reader (optional)",
+            "weight": "Starting at 1.32 kg (non-touch) / 1.45 kg (touch)",
+            "wifi_bt": "Intel AX201 Wi-Fi 6 (2x2) and Bluetooth 5 Combo",
+            "security_tpm": "TPM 2.0",
+            "has_wwan": true,
+            "wwan_modules": [
+                {
+                    "module_name": "Intel XMM 7360 LTE-Advanced Cat 9",
+                    "part_number": "Unknown",
+                    "network_speed": "LTE-Advanced Cat 9",
+                    "esim_support": "No",
+                    "physical_sim": "Yes",
+                    "tray_pn": "Unknown",
+                    "status": "Optional"
+                },
+                {
+                    "module_name": "Intel XMM 7560 LTE-Advanced Pro Cat 16",
+                    "part_number": "Unknown",
+                    "network_speed": "LTE-Advanced Pro Cat 16",
+                    "esim_support": "No",
+                    "physical_sim": "Yes",
+                    "tray_pn": "Unknown",
+                    "status": "Optional"
+                }
+            ],
+            "sim_slot_type": "Nano-SIM",
+            "has_esim": false,
+            "power_watts": "65W  ",
+            "power_connector": "4.5*3.0mm/ type c ",
+            "power_pn": "Unknown",
+            "battery_info": "HP Long Life 3-cell, 53 Wh Li-ion",
+            "expert_notes": "The HP EliteBook 840 G7 is a business-focused laptop known for its portability, security features, and performance. It offers a variety of configurations, including different processors, RAM, storage, and display options. WWAN is optional and must be configured at the factory.",
+            "pdf_links": [
+                "(https://hp.it-shop.bg/uploaded/6/5/EliteBook-840-G7-QS.pdf)"
+            ]
         }
     }
 }
