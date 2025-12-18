@@ -129,7 +129,7 @@
                     "network_speed": "4G LTE",
                     "esim_support": "Yes",
                     "physical_sim": "Yes",
-                    "tray_pn": "Unknown",
+                    "tray_pn": "C2M1W/0C2M1W",
                     "status": "Available"
                 }
             ],
@@ -846,7 +846,7 @@
             ]
         },
         "ThinkCentre M70q Tiny Gen 1": {
-            "type": "Mini PC",
+            "type": "Laptop",
             "cpu": "10th Generation Intel Core i3/i5/i7/i9",
             "gpu": "Integrated Intel UHD Graphics 630",
             "sub_model": "Gen 1",
@@ -872,7 +872,7 @@
             "power_connector": "Slim Tip",
             "power_pn": "Various, check the back of the PC for input",
             "battery_info": "No battery",
-            "expert_notes": "The M70q Tiny is a compact desktop PC known for its enterprise-level performance and upgradeability. It supports up to three monitors. It is compatible with Windows 10 and Windows 11. It is also tested against military-grade requirements for durability",
+            "expert_notes": "The M70q Tiny is a compact desktop PC known for its enterprise-level performance and upgradeability. It supports up to three monitors. It is compatible with Windows 10 and Windows 11. It is also tested against military-grade requirements for durability\n\nHDMI additional card  - FRU  5C50W00937",
             "pdf_links": [
                 "(https://psref.lenovo.com/syspool/Sys/PDF/ThinkCentre/ThinkCentre_M70q_Gen_2/ThinkCentre_M70q_Gen_2_Spec.pdf)"
             ]
@@ -1171,6 +1171,38 @@
             "expert_notes": "The HP EliteBook 840 G7 is a business-focused laptop known for its portability, security features, and performance. It offers a variety of configurations, including different processors, RAM, storage, and display options. WWAN is optional and must be configured at the factory.",
             "pdf_links": [
                 "(https://hp.it-shop.bg/uploaded/6/5/EliteBook-840-G7-QS.pdf)"
+            ]
+        },
+        "HP ProDesk 400 G7 SFF": {
+            "type": "SFF",
+            "cpu": "10th Generation Intel Core i3, i5, or i7 processors; Intel Celeron",
+            "gpu": "Integrated Intel UHD Graphics 630.  Supports low-profile GPUs like the 4060 LP and some professional cards like the A4000",
+            "sub_model": "SFF",
+            "lifecycle": "Active",
+            "support_os": "Windows 10 Pro 64, Windows 10 Home 64, Windows 10 Home Single Language 64, FreeDOS",
+            "ports": "Front: 1 headphone/microphone combo; 2 SuperSpeed USB Type-A 10Gbps signaling rate; 2 USB Type-A 480Mbps signaling rate\nRear: 1 audio-out; 1 power connector; 1 RJ-45; 1 HDMI 1.4; 3 SuperSpeed USB Type-A 5Gbps signaling rate; 1 DisplayPort™ 1.4; 2 USB Type-A 480Mbps\nsignaling rate\n",
+            "ram_soldered": "No (Upgradable)",
+            "ram_slots": "2",
+            "ram_type": "DDR4",
+            "ram_max": "64 GB DDR4-2666 SDRAM; 64 GB DDR4-3200 SDRAM",
+            "storage_slots": "One M.2 2280 slot for storage, optional - One 3.5\" HDD bay convertible to two 2.5\" HDD with caddy",
+            "screen_options": "N/A",
+            "webcam": "N/A",
+            "biometrics": "N/A",
+            "weight": "8.6 lbs (3.9 kg)",
+            "wifi_bt": "Optional  - Intel Wi-Fi 6 AX201 (2x2) Wi-Fi and Bluetooth M.2 combo card",
+            "security_tpm": "TPM 2.0",
+            "has_wwan": false,
+            "wwan_modules": [],
+            "sim_slot_type": "N/A",
+            "has_esim": false,
+            "power_watts": "180W, 210W",
+            "power_connector": "Line in",
+            "power_pn": "L70044-003, L70044-004, DPS-180AB-30B, L83669-001",
+            "battery_info": "N/A",
+            "expert_notes": "The HP ProDesk 400 G7 SFF supports up to 64GB of RAM and has an M.2 slot for storage. It has a security lock slot. The power supply is proprietary.\nAdd-on card – choose one of the following options: 4x Serial, serial and PS/2 ports combination or parallel; Flex IO port – choose one of the following options:\nDisplayPort™ 1.4, VGA, HDMI 2.0, serial, SuperSpeed USB Type-C® 10Gbps signaling rate (alternate mode DisplayPort™), Dual SuperSpeed USB Type-A 5Gbps\nsignaling rate",
+            "pdf_links": [
+                "(https://simpress.com.br/wp-content/uploads/2022/07/HP-ProDesk-400-G7-SFF.pdf)"
             ]
         }
     }
