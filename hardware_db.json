@@ -131,6 +131,15 @@
                     "physical_sim": "Yes",
                     "tray_pn": "C2M1W/0C2M1W",
                     "status": "Available"
+                },
+                {
+                    "module_name": "DW5820e",
+                    "part_number": "284DC",
+                    "network_speed": null,
+                    "esim_support": "No",
+                    "physical_sim": null,
+                    "tray_pn": null,
+                    "status": null
                 }
             ],
             "sim_slot_type": "microSIM",
