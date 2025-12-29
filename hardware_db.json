@@ -855,7 +855,7 @@
             ]
         },
         "ThinkCentre M70q Tiny Gen 1": {
-            "type": "Laptop",
+            "type": "Mini PC",
             "cpu": "10th Generation Intel Core i3/i5/i7/i9",
             "gpu": "Integrated Intel UHD Graphics 630",
             "sub_model": "Gen 1",
@@ -883,7 +883,7 @@
             "battery_info": "No battery",
             "expert_notes": "The M70q Tiny is a compact desktop PC known for its enterprise-level performance and upgradeability. It supports up to three monitors. It is compatible with Windows 10 and Windows 11. It is also tested against military-grade requirements for durability\n\nHDMI additional card  - FRU  5C50W00937",
             "pdf_links": [
-                "(https://psref.lenovo.com/syspool/Sys/PDF/ThinkCentre/ThinkCentre_M70q_Gen_2/ThinkCentre_M70q_Gen_2_Spec.pdf)"
+                "(https://psref.lenovo.com/syspool/Sys/PDF/ThinkCentre/ThinkCentre_M70q/ThinkCentre_M70q_Spec.pdf)"
             ]
         },
         "ThinkPad T14s Gen 2": {
