@@ -1032,6 +1032,66 @@
             "pdf_links": [
                 "(https://psref.lenovo.com/syspool/Sys/PDF/ThinkPad/ThinkPad_T14_Gen_1_Intel/ThinkPad_T14_Gen_1_Intel_Spec.pdf)"
             ]
+        },
+        "ThinkPad T14s Gen 6": {
+            "type": "Laptop",
+            "cpu": "Intel Core Ultra 5 / 7 or Intel H Series Core Ultra 7 Processor (Series 2) - Arrow Lake (ARL) or Intel V Series Core Ultra 5 / 7 Processor (Series 2) - Lunar Lake (LNL)",
+            "gpu": "Integrated Intel Graphics, Integrated Intel Arc Graphics",
+            "sub_model": "Gen 6",
+            "lifecycle": "Available",
+            "support_os": "Windows 11 Pro, Windows 11 Home",
+            "ports": "2x Thunderbolt 4, 2x USB-A (USB 5Gbps), HDMI, Headphone / microphone combo jack (3.5mm), Nano-SIM card slot (optional)",
+            "ram_soldered": "No (Upgradable)",
+            "ram_slots": "Memory soldered to systemboard, no slots, dual-channel",
+            "ram_type": "LPDDR5x",
+            "ram_max": "64GB",
+            "storage_slots": "One M.2 2280 PCIe® 4.0 x4 slot",
+            "screen_options": "WUXGA (1920 x 1200) IPS, 400 cd/m², 45 % NTSC, multitouch; WUXGA (1920 x 1200), 500 cd/m², 100 % sRGB, low power",
+            "webcam": "5MP",
+            "biometrics": "Fingerprint",
+            "weight": "1.24 kg (2.7 lbs)",
+            "wifi_bt": "Intel BE201",
+            "security_tpm": "TPM 2.0",
+            "has_wwan": true,
+            "wwan_modules": [
+                {
+                    "module_name": "QCT,RM520N CN",
+                    "part_number": "5W11H85456",
+                    "network_speed": "5G",
+                    "esim_support": "Yes",
+                    "physical_sim": "Yes",
+                    "tray_pn": "\t5M21L98632",
+                    "status": ""
+                },
+                {
+                    "module_name": "QCT,RM520N",
+                    "part_number": "5W11H85454",
+                    "network_speed": "5G",
+                    "esim_support": "Yes",
+                    "physical_sim": "Yes",
+                    "tray_pn": "\t5M21L98632",
+                    "status": ""
+                },
+                {
+                    "module_name": "QCT,EM061K-GL",
+                    "part_number": "5W11H85427",
+                    "network_speed": "5G",
+                    "esim_support": "Yes",
+                    "physical_sim": "Yes",
+                    "tray_pn": "\t5M21L98632",
+                    "status": null
+                }
+            ],
+            "sim_slot_type": "Nano-SIM",
+            "has_esim": true,
+            "power_watts": "65 Watt",
+            "power_connector": "type c",
+            "power_pn": "5B11M90105",
+            "battery_info": "58Wh",
+            "expert_notes": "Lenovo whitelists certain WWAN cards, so you have to choose carefully.\n\nCheck for SIM tray if avalable on case",
+            "pdf_links": [
+                "(https://psref.lenovo.com/syspool/Sys/PDF/ThinkPad/ThinkPad_T14s_Gen_6_Intel/ThinkPad_T14s_Gen_6_Intel_Spec.pdf)"
+            ]
         }
     },
     "HP": {
