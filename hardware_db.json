@@ -1273,6 +1273,66 @@
             "pdf_links": [
                 "(https://simpress.com.br/wp-content/uploads/2022/07/HP-ProDesk-400-G7-SFF.pdf)"
             ]
+        },
+        "HP EliteBook 840 G8": {
+            "type": "Laptop",
+            "cpu": "11th Generation Intel Core i5/i7 processor",
+            "gpu": "Intel Iris Xe Graphics (integrated)",
+            "sub_model": "G8",
+            "lifecycle": "Active",
+            "support_os": "Windows 10 Pro, Windows 11 Pro",
+            "ports": "Thunderbolt 4 x 2, USB x 2, HDMI, audio combo jack, Nano Security Lock Slot",
+            "ram_soldered": "No (Upgradable)",
+            "ram_slots": "2",
+            "ram_type": "DDR4-3200 SDRAM",
+            "ram_max": "64 GB",
+            "storage_slots": "M.2 2280 SSD slot, 512 GB PCIe® NVMe™ M.2 SSD",
+            "screen_options": "14\" FHD (1920 x 1080) IPS, optional HP Sure View Reflect integrated privacy screen",
+            "webcam": "HD and IR Camera (Optional)",
+            "biometrics": "Fingerprint reader (optional)",
+            "weight": "Starting at 1.32 kg (non-touch); Starting at 1.46 kg (touch)",
+            "wifi_bt": "Intel Wi-Fi 6 AX201 (2x2) and Bluetooth 5.2",
+            "security_tpm": "TPM 2.0",
+            "has_wwan": true,
+            "wwan_modules": [
+                {
+                    "module_name": "Intel XMM 7360 LTE-Advanced (Cat 9)",
+                    "part_number": "L70670-001",
+                    "network_speed": "LTE-Advanced (Cat 9)",
+                    "esim_support": "No",
+                    "physical_sim": "Yes",
+                    "tray_pn": "2850108",
+                    "status": "Available"
+                },
+                {
+                    "module_name": "Qualcomm Snapdragon X55 LTE + 5G",
+                    "part_number": "L83053-001",
+                    "network_speed": "5G",
+                    "esim_support": "Yes",
+                    "physical_sim": "Yes",
+                    "tray_pn": "2850108",
+                    "status": "Available"
+                },
+                {
+                    "module_name": "HP Fibocom L850-GL Wireless XMM 7360",
+                    "part_number": "L15398-001/917822-002",
+                    "network_speed": "LTE",
+                    "esim_support": "No",
+                    "physical_sim": null,
+                    "tray_pn": "2850108",
+                    "status": null
+                }
+            ],
+            "sim_slot_type": "Nano-SIM",
+            "has_esim": true,
+            "power_watts": "65 W",
+            "power_connector": "USB Type-C",
+            "power_pn": "",
+            "battery_info": "HP Long Life 3-cell, 53 Wh Li-ion p/n CC03XL",
+            "expert_notes": "The HP EliteBook 840 G8 is a business laptop with optional 5G and 4G LTE wireless, long battery life, and a powerful 11th Gen Intel Core processor. It has a 14\" FHD display with optional HP Sure View Reflect integrated privacy screen. The device includes security features from HP, such as HP Sure Sense and HP Sure View Reflect.",
+            "pdf_links": [
+                "(https://pcb.inc.hp.com/dc/api/spec-sheet/il-en/2101127512/pdf/5Z5B5EA.pdf)"
+            ]
         }
     }
 }
