@@ -1092,6 +1092,38 @@
             "pdf_links": [
                 "(https://psref.lenovo.com/syspool/Sys/PDF/ThinkPad/ThinkPad_T14s_Gen_6_Intel/ThinkPad_T14s_Gen_6_Intel_Spec.pdf)"
             ]
+        },
+        "IdeaPad 5 2-in-1 16IAL10": {
+            "type": "Laptop",
+            "cpu": "Intel Core Ultra 7 255U (12 cores, up to 5.2 GHz)",
+            "gpu": "Integrated Intel Graphics",
+            "sub_model": "Gen 10 (IAL10)",
+            "lifecycle": "Available",
+            "support_os": "Windows 11 Home/Pro",
+            "ports": "['1x USB-A (USB 5Gbps / USB 3.2 Gen 1)', '1x USB-A (USB 5Gbps / USB 3.2 Gen 1), Always On', '2x USB-C (USB 10Gbps / USB 3.2 Gen 2), with USB PD 3.0 and DisplayPort 1.4', '1x HDMI 1.4b', '1x microSD card reader', 'Headphone / microphone combo jack (3.5mm)']",
+            "ram_soldered": "No (Upgradable)",
+            "ram_slots": "Memory soldered to systemboard, no slots, dual-channel",
+            "ram_type": "LPDDR5x-8000",
+            "ram_max": "16GB soldered memory",
+            "storage_slots": "One M.2 2242 PCIe 4.0 x4 slot",
+            "screen_options": "16\" WUXGA (1920 x 1200) IPS touchscreen",
+            "webcam": "1080p FHD + IR webcam",
+            "biometrics": "IR Camera and Windows Hello facial recognition",
+            "weight": "Starting at 2 kg (4.41 lbs)",
+            "wifi_bt": "Wi-Fi 6, 802.11ax 2x2 Wi-Fi + Bluetooth 5.2",
+            "security_tpm": "Firmware TPM 2.0",
+            "has_wwan": false,
+            "wwan_modules": [],
+            "sim_slot_type": "eSIM",
+            "has_esim": false,
+            "power_watts": "65W",
+            "power_connector": "USB-C",
+            "power_pn": "",
+            "battery_info": "57Wh L23D3PE1",
+            "expert_notes": "2-in-1 convertible design, Intel Core Ultra 7 processor, 16GB RAM, 512GB SSD",
+            "pdf_links": [
+                "(https://psref.lenovo.com/syspool/Sys/PDF/IdeaPad/IdeaPad_5_2_in_1_16IAL10/IdeaPad_5_2_in_1_16IAL10_Spec.pdf)"
+            ]
         }
     },
     "HP": {
