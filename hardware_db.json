@@ -1124,6 +1124,38 @@
             "pdf_links": [
                 "(https://psref.lenovo.com/syspool/Sys/PDF/IdeaPad/IdeaPad_5_2_in_1_16IAL10/IdeaPad_5_2_in_1_16IAL10_Spec.pdf)"
             ]
+        },
+        "ThinkPad E14 Gen 7 (Intel)": {
+            "type": "Laptop",
+            "cpu": "Intel Core Ultra 5/7 Series (U or H)",
+            "gpu": "Intel Graphics, Intel Arc 130T GPU, Intel Arc 140T GPU",
+            "sub_model": "Gen 7 (Intel)",
+            "lifecycle": "Available",
+            "support_os": "Windows 11 Pro, Windows 11 Home, Windows 11 Home Single Language",
+            "ports": "1x USB-A 3.2 Gen 1, 1x USB-A 3.2 Gen 2 (Always On), 1x USB-C 3.2 Gen 2x2 (PD 3.1 & DP 1.4), 1x USB-C Thunderbolt 4 (PD 3.1 & DP 2.1), HDMI 2.1, Ethernet (RJ-45), Headphone / microphone combo jack (3.5mm)",
+            "ram_soldered": "No (Upgradable)",
+            "ram_slots": "Two DDR5 SO-DIMM slots",
+            "ram_type": "DDR5-5600",
+            "ram_max": "64GB",
+            "storage_slots": "Two M.2 slots: One M.2 2242 PCIe 4.0 x4 slot, One M.2 2280 PCIe 4.0 x4 slot",
+            "screen_options": "14.0\", WUXGA (1920 x 1200) IPS, 2.8K (2880 x 1800), 120 Hz, IPS",
+            "webcam": "HD 720p, FHD 1080p + IR hybrid (Optional), 5.0MP",
+            "biometrics": "Fingerprint reader, IR facial recognition (Optional)",
+            "weight": "Starting at 1.34 kg (2.95 lbs)",
+            "wifi_bt": "Wi-Fi 6E, 802.11ax 2x2 Wi-Fi + Bluetooth 5.3, M.2 card; Intel Wi-Fi 6E AX211",
+            "security_tpm": "Discrete TPM 2.0",
+            "has_wwan": false,
+            "wwan_modules": [],
+            "sim_slot_type": "Nano-SIM",
+            "has_esim": false,
+            "power_watts": "65W",
+            "power_connector": "USB-C",
+            "power_pn": "L24D3PG4",
+            "battery_info": "48Wh or 64Wh Li-ion Battery. Up to 12.28 hr battery life",
+            "expert_notes": "The ThinkPad E14 Gen 7 (Intel) offers a balance of performance, security, and portability, suitable for business professionals. It supports up to 64GB of DDR5 memory and features various display options, including a 120 Hz panel. The device includes a range of ports, including Thunderbolt 4, and offers Wi-Fi 6E connectivity.  WWAN is NOT supported.\n",
+            "pdf_links": [
+                "(https://psref.lenovo.com/syspool/Sys/PDF/ThinkPad/ThinkPad_E14_Gen_7_Intel/ThinkPad_E14_Gen_7_Intel_Spec.pdf)"
+            ]
         }
     },
     "HP": {
