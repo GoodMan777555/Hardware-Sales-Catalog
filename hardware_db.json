@@ -1156,6 +1156,75 @@
             "pdf_links": [
                 "(https://psref.lenovo.com/syspool/Sys/PDF/ThinkPad/ThinkPad_E14_Gen_7_Intel/ThinkPad_E14_Gen_7_Intel_Spec.pdf)"
             ]
+        },
+        "ThinkPad T14 Gen 3 (Intel)": {
+            "type": "Laptop",
+            "cpu": "Up to 12th-generation Intel Core i7 vPro P- and U-series processors",
+            "gpu": "Integrated Intel UHD Graphics (Core i3), Intel Iris Xe Graphics (Core i5 and Core i7). Discrete (optional): NVIDIA GeForce MX550, NVIDIA GeForce RTX 2050",
+            "sub_model": "Gen 3",
+            "lifecycle": "Withdrawn",
+            "support_os": "Windows 11 Pro, Windows 11 Home, Windows 11 Home Single Language, Windows 11 DG Windows 10 Pro 64, Windows 10 IoT Enterprise LTSC 2021, Linux, Ubuntu Linux, No operating system",
+            "ports": "1x USB 3.2 Gen 1, 1x USB 3.2 Gen 1 (Always On), 2x Thunderbolt 4 / USB4 40Gbps (support data transfer, Power Delivery 3.0 and DisplayPort 1.4a), 1x HDMI up to 4K/60Hz, 1x Ethernet (RJ-45), 1x headphone / microphone combo jack (3.5mm), optional 1x Smart Card Reader",
+            "ram_soldered": "Partial (1 Slot + Soldered)",
+            "ram_slots": "One soldered chip, One SO-DIMM slot",
+            "ram_type": "DDR4-3200",
+            "ram_max": "Up to 48GB (16GB soldered + 32GB SO-DIMM) DDR4-3200",
+            "storage_slots": "One M.2 2280 PCIe Gen 4 SSD slot, supporting up to 2TB",
+            "screen_options": "14-inch 16:10 Full HD+ (1920 x 1200) IPS, anti-glare, 300 nits\n14-inch 16:10 Full HD+ (1920 x 1200) IPS, anti-glare, 300 nits, touch\n14-inch 16:10 Full HD+ (1920 x 1200) IPS, low power, anti-glare, 400 nits, 100% sRGB\n14-inch 16:10 Full HD+ (1920 x 1200) IPS, Privacy Guard, anti-glare, 500nits, 100% sRGB\n14-inch 16:10 2.2K (2240x1400) IPS, anti-glare, 300nits\n14-inch 16:10 Ultra HD+ (3840 x 2400) IPS, anti-glare, anti-reflection, anti-smudge, 500nits, 100% DCI-P3, HDR 400, Dolby Vision, touch (AOFT)",
+            "webcam": "Optional IR camera for Windows Hello for facial recognition, an optional web camera shutter for user privacy during calls or meetings",
+            "biometrics": "Optional IR camera for Windows Hello for facial recognition, Fingerprint reader",
+            "weight": "Starting at 1.21 kg (2.65 lbs)",
+            "wifi_bt": "Qualcomm Wi-Fi 6E NFA725A, 802.11ax 2x2 Wi-Fi + Bluetooth 5.1 or Intel Wi-Fi 6E AX211, 802.11ax 2x2 Wi-Fi + Bluetooth 5.1",
+            "security_tpm": "TPM",
+            "has_wwan": true,
+            "wwan_modules": [
+                {
+                    "module_name": "Quectel EM05‑G LTE Cat4",
+                    "part_number": "5W10V25860",
+                    "network_speed": null,
+                    "esim_support": "no",
+                    "physical_sim": null,
+                    "tray_pn": "5M20Z56332/5M20Z56327",
+                    "status": null
+                },
+                {
+                    "module_name": "Fibocom L860‑GL‑16 / L860R LTE Cat16",
+                    "part_number": "5W11H85373",
+                    "network_speed": null,
+                    "esim_support": "Yes",
+                    "physical_sim": null,
+                    "tray_pn": "5M20Z56332/5M20Z56327",
+                    "status": null
+                },
+                {
+                    "module_name": "Fibocom L860R+ LTE Cat16",
+                    "part_number": "5W10V25833",
+                    "network_speed": null,
+                    "esim_support": "no",
+                    "physical_sim": null,
+                    "tray_pn": "5M20Z56332/5M20Z56327",
+                    "status": null
+                },
+                {
+                    "module_name": "Quectel EM05‑CE LTE Cat4",
+                    "part_number": "5W10V25794",
+                    "network_speed": null,
+                    "esim_support": "no",
+                    "physical_sim": null,
+                    "tray_pn": "5M20Z56332/5M20Z56327",
+                    "status": null
+                }
+            ],
+            "sim_slot_type": "Nano-SIM / eSIM",
+            "has_esim": true,
+            "power_watts": "65W",
+            "power_connector": "USB-C",
+            "power_pn": "N/A",
+            "battery_info": "Up to 10 hours (52.5Whr) fru 5B10W51864",
+            "expert_notes": "Intel Iris Xe Graphics capability requires system to be configured with dual-channel memory. On the system with single-channel memory, Intel Iris Xe Graphics will function as Intel UHD Graphics.",
+            "pdf_links": [
+                "(https://psref.lenovo.com/syspool/Sys/PDF/ThinkPad/ThinkPad_T14_Gen_3_Intel/ThinkPad_T14_Gen_3_Intel_Spec.pdf)"
+            ]
         }
     },
     "HP": {
