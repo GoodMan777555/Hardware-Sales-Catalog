@@ -161,7 +161,7 @@
             "lifecycle": "Active",
             "support_os": "Windows 11, Windows 10, Ubuntu 20.04 LTS",
             "ports": "USB 3.2 Gen 1, USB 3.2 Gen 1 with PowerShare, Thunderbolt 4 with DisplayPort Alt Mode/USB4/Power Delivery, HDMI 2.0, microSD card slot",
-            "ram_soldered": "Yes (Soldered)",
+            "ram_soldered": "No (Upgradable)",
             "ram_slots": "Memory soldered to systemboard",
             "ram_type": "DDR4 3200 MHz",
             "ram_max": "32 GB max",
@@ -180,7 +180,7 @@
                     "network_speed": "Unknown",
                     "esim_support": "no",
                     "physical_sim": "",
-                    "tray_pn": "04CG3NEW ",
+                    "tray_pn": "0H86P6",
                     "status": "Available"
                 },
                 {
@@ -189,7 +189,7 @@
                     "network_speed": null,
                     "esim_support": "Yes",
                     "physical_sim": null,
-                    "tray_pn": "04CG3NEW ",
+                    "tray_pn": "0H86P6",
                     "status": null
                 }
             ],
