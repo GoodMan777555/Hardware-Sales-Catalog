@@ -1225,6 +1225,38 @@
             "pdf_links": [
                 "(https://psref.lenovo.com/syspool/Sys/PDF/ThinkPad/ThinkPad_T14_Gen_3_Intel/ThinkPad_T14_Gen_3_Intel_Spec.pdf)"
             ]
+        },
+        "ThinkCentre M80q Gen 3 Tiny": {
+            "type": "Laptop",
+            "cpu": "Intel Celeron, Intel Pentium, 12th Generation Intel Core i3 / i5 / i7 / i9",
+            "gpu": "Integrated Intel UHD Graphics 710, 730, 770",
+            "sub_model": "Gen 3",
+            "lifecycle": "Available",
+            "support_os": "Windows 11 Pro, Windows 11 Home, Windows 10 IoT Enterprise LTSC 2021, No operating system",
+            "ports": "Front: 1x USB 3.2 Gen 2 (Always On and fast charge)\nRear: 2 x USB-A 3.2 Gen 2, 2 x USB-A 3.2 Gen 1, HDMI 2.1 TMDS, DisplayPort 1.4, Flex IO port #1 (VGA/DP/HDMI/Type-C/Serial) Flex IO port #2 (VGA/DP/HDMI/Serial/LAN), LAN (1G)",
+            "ram_soldered": "No (Upgradable)",
+            "ram_slots": "2",
+            "ram_type": "DDR5 SODIMM",
+            "ram_max": "64GB",
+            "storage_slots": "Up to three drives: 1x 2.5\" HDD + 2x M.2 SSD",
+            "screen_options": "N/A",
+            "webcam": "N/A",
+            "biometrics": "Optional touch style fingerprint reader on mouse",
+            "weight": "Starting at 1.3kg / 2.9lbs",
+            "wifi_bt": "Intel Wi-Fi 6E AX211, Realtek RTL8822CE, 802.11ac Dual Band 2x2 Wi-Fi + Bluetooth 5.0, M.2 card",
+            "security_tpm": "Discrete TPM 2.0, TCG certified",
+            "has_wwan": false,
+            "wwan_modules": [],
+            "sim_slot_type": "N/A",
+            "has_esim": false,
+            "power_watts": "90W",
+            "power_connector": "Lenovo power input (square input)",
+            "power_pn": "N/A",
+            "battery_info": "N/A",
+            "expert_notes": "Expansion functionality to support up to four displays. Toolless access to the SSD and memory module make expansion and maintenance fast and efficient.\n\nAdditional module:\nHDMI - \t5C50W00905\nDP - 5C50W00903\nVGA - 5C50W00911/5C50W00901\nType-C 100W - \t5C50W00907\n\nhttps://pcsupport.lenovo.com/id/en/products/desktops-and-all-in-ones/thinkcentre-m-series-desktops/thinkcentre-m80q-gen-3/11u2/11u2s01p00/mj0jvhcd/parts/display/compatible",
+            "pdf_links": [
+                "(https://psref.lenovo.com/syspool/Sys/PDF/ThinkCentre/ThinkCentre_M80q_Gen_3/ThinkCentre_M80q_Gen_3_Spec.pdf)"
+            ]
         }
     },
     "HP": {
