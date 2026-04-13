@@ -203,6 +203,48 @@
             "pdf_links": [
                 "(https://objects.icecat.biz/objects/mmo_96025782_1664293933_5855_21283.pdf)"
             ]
+        },
+        "Latitude 7430": {
+            "type": "Laptop",
+            "cpu": "12th Generation Intel Core i5 (i5-1235U, i5-1245U, i5-1250P) or Intel Core i7 (i7-1255U, i7-1265U, i7-1270P)",
+            "gpu": "Intel Iris Xe Graphics",
+            "sub_model": "2022",
+            "lifecycle": "Active",
+            "support_os": "Windows 10, Windows 11, Ubuntu 20.04 LTS",
+            "ports": "Two Thunderbolt 4 (USB-C) with Power Delivery and DisplayPort 1.4, one USB 3.2 Gen 1 Type-A with PowerShare, one HDMI 2.0, one universal audio jack, microSD card reader, optional microSIM-card slot, optional Smart Card reader",
+            "ram_soldered": "Yes (Soldered)",
+            "ram_slots": "0",
+            "ram_type": "DDR4 3200MHz (U-series) / LPDDR5 4800MHz (P-series)",
+            "ram_max": "32GB",
+            "storage_slots": "M.2 NVMe SSD",
+            "screen_options": "14-inch Full HD (1920x1080) IPS, non-touch or touch-screen options, anti-glare, WVA, 250-300 nits",
+            "webcam": "1080p with IR sensor and physical privacy shutter",
+            "biometrics": "Optional fingerprint reader, IR camera for Windows Hello",
+            "weight": "Clamshell: 1.22 kg (2.69 lb) to 1.27 kg (2.79 lb). 2-in-1: 1.35 kg (2.97 lb)",
+            "wifi_bt": "Wi-Fi 6E (802.11ax) and Bluetooth 5.2 or 5.3",
+            "security_tpm": "TPM 2.0 ",
+            "has_wwan": true,
+            "wwan_modules": [
+                {
+                    "module_name": "DW5932e eSIM 5G Module LTE Cat19 ",
+                    "part_number": "T77W968 ",
+                    "network_speed": "LTE",
+                    "esim_support": "Yes",
+                    "physical_sim": "support (with tray)",
+                    "tray_pn": "see notes",
+                    "status": null
+                }
+            ],
+            "sim_slot_type": "Nano-SIM",
+            "has_esim": true,
+            "power_watts": "65W",
+            "power_connector": "USB-C",
+            "power_pn": "Unknown",
+            "battery_info": "58 Wh Lithium-Ion 07KRV",
+            "expert_notes": "RAM is soldered and not upgradeable. Available in carbon fiber (black) or aluminum (titan grey).\nSim Tray Holder - https://he.aliexpress.com/item/1005010573088748.html?gatewayAdapt=glo2isr4itemAdapt",
+            "pdf_links": [
+                "(http://cdn.cnetcontent.com/ac/f0/acf0444e-f12b-42db-b690-58a0d6c4250f.pdf)"
+            ]
         }
     },
     "Lenovo": {
