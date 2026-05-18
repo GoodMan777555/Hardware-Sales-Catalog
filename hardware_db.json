@@ -1317,6 +1317,157 @@
             "pdf_links": [
                 "(https://psref.lenovo.com/syspool/Sys/PDF/ThinkCentre/ThinkCentre_M80q_Gen_3/ThinkCentre_M80q_Gen_3_Spec.pdf)"
             ]
+        },
+        "ThinkPad X1 Yoga Gen 8": {
+            "type": "Laptop",
+            "cpu": "Up to 13th Gen Intel Core i5 / i7 (U-Series and P-Series)",
+            "gpu": "Integrated Intel Iris Xe Graphics",
+            "sub_model": "Gen 8 / 2023",
+            "lifecycle": "Withdrawn",
+            "support_os": "Windows 11 Pro, Windows 11 Home, Windows 10 Pro (via downgrade), Ubuntu Linux",
+            "ports": "2x Thunderbolt 4 / USB4 40Gbps, 2x USB 3.2 Gen 1, 1x HDMI, 1x Headphone / mic combo jack, 1x Nano-SIM card slot (WWAN models)",
+            "ram_soldered": "Yes (Soldered)",
+            "ram_slots": "0",
+            "ram_type": "LPDDR5-6400 / LPDDR5x-7500 (runs at 6000/6400 due to platform limitation)",
+            "ram_max": "Up to 64GB",
+            "storage_slots": "One M.2 2280 PCIe 4.0 x4 slot",
+            "screen_options": "14\" WUXGA (1920x1200) IPS 400nits Anti-glare Touch, up to 14\" WQUXGA (3840x2400) OLED Touch",
+            "webcam": "FHD 1080p or FHD 1080p + IR Hybrid with Privacy Shutter",
+            "biometrics": "Fingerprint Reader integrated with Power Button, IR Camera for Windows Hello",
+            "weight": "Starting at 1.38 kg (3.04 lbs)",
+            "wifi_bt": "Intel Wi-Fi 6E AX211, 802.11ax 2x2 + Bluetooth 5.1/5.3",
+            "security_tpm": "Discrete TPM 2.0",
+            "has_wwan": true,
+            "wwan_modules": [
+                {
+                    "module_name": "Wireless,WWAN,FBC,FM350J3\n",
+                    "part_number": "5W11H85408",
+                    "network_speed": "",
+                    "esim_support": "",
+                    "physical_sim": "Yes",
+                    "tray_pn": "5M10V75650",
+                    "status": "Available on AliExpress/eBay / Whitelisted"
+                },
+                {
+                    "module_name": "Wireless,WAN,FBC,L860R+\n",
+                    "part_number": "5W10V25838",
+                    "network_speed": "",
+                    "esim_support": "",
+                    "physical_sim": "Yes",
+                    "tray_pn": "5M10V75650",
+                    "status": "Available on AliExpress/eBay / Whitelisted"
+                },
+                {
+                    "module_name": "Wireless,CMB,FBC,L860R+ CHN\n",
+                    "part_number": "5W10V25833",
+                    "network_speed": null,
+                    "esim_support": null,
+                    "physical_sim": "Yes",
+                    "tray_pn": "5M10V75650",
+                    "status": "Available on AliExpress/eBay / Whitelisted"
+                },
+                {
+                    "module_name": null,
+                    "part_number": null,
+                    "network_speed": null,
+                    "esim_support": null,
+                    "physical_sim": null,
+                    "tray_pn": null,
+                    "status": null
+                }
+            ],
+            "sim_slot_type": "Nano-SIM",
+            "has_esim": true,
+            "power_watts": "65W",
+            "power_connector": "USB-C",
+            "power_pn": "Various (e.g., 65W USB-C adapter)",
+            "battery_info": "57Wh p/n 5B10W13973",
+            "expert_notes": "WWAN modules are strictly whitelisted by Lenovo BIOS. Ensure you purchase the exact FRU for the X1 Yoga Gen 8. The system features soldered RAM which is not upgradable. Installed LPDDR5x memory runs at lower speeds due to platform limitations. WWAN must be configured at purchase or requires WWAN antennas pre-installed.",
+            "pdf_links": [
+                "[Lenovo PSREF](https://psref.lenovo.com/syspool/Sys/PDF/ThinkPad/ThinkPad_X1_Yoga_Gen_8/ThinkPad_X1_Yoga_Gen_8_Spec.pdf)",
+                "cheked pc",
+                "(https://pcsupport.lenovo.com/id/en/products/laptops-and-netbooks/thinkpad-x-series-laptops/thinkpad-x1-yoga-8th-gen-type-21hq-21hr/21hr/21hrs2tf00/pf4ms51p/parts/display/as-built)"
+            ]
+        },
+        "ThinkPad X1 Carbon Gen 10": {
+            "type": "Laptop",
+            "cpu": "12th Gen Intel Core i5 / i7 (U-series or P-series)",
+            "gpu": "Intel Iris Xe Graphics",
+            "sub_model": "2022",
+            "lifecycle": "Legacy / End of Life",
+            "support_os": "Windows 10/11, Linux (Fedora/Ubuntu)",
+            "ports": "2x Thunderbolt 4 (USB-C), 2x USB 3.2 Gen 1 (one Always On), 1x HDMI 2.0b, 3.5mm combo jack",
+            "ram_soldered": "Yes (Soldered)",
+            "ram_slots": "0",
+            "ram_type": "LPDDR5-5200",
+            "ram_max": "32GB",
+            "storage_slots": "1x M.2 2280 PCIe Gen 4.0 x4",
+            "screen_options": "WUXGA (1920x1200) IPS, 2.2K (2240x1400) IPS, 2.8K (2880x1800) OLED, WQUXGA (3840x2400) IPS",
+            "webcam": "FHD 1080p + IR (optional), with privacy shutter",
+            "biometrics": "Fingerprint Reader, IR Camera (optional), Human Presence Detection",
+            "weight": "Starting at 1.12 kg (2.48 lbs)",
+            "wifi_bt": "Intel Wi-Fi 6E AX211, Bluetooth 5.2",
+            "security_tpm": "Discrete TPM 2.0",
+            "has_wwan": true,
+            "wwan_modules": [
+                {
+                    "module_name": "Wireless,WWAN,FBC,L860R\n  P-2",
+                    "part_number": "5W11H85371",
+                    "network_speed": null,
+                    "esim_support": "no",
+                    "physical_sim": "Yes",
+                    "tray_pn": "5M11J01014",
+                    "status": null
+                },
+                {
+                    "module_name": "Wireless,CMB,FBC,L860R+\n  CHN",
+                    "part_number": "5W10V25833",
+                    "network_speed": null,
+                    "esim_support": "no",
+                    "physical_sim": "Yes",
+                    "tray_pn": "5M11J01014",
+                    "status": null
+                },
+                {
+                    "module_name": "Wireless,CMB,FBC,FM350\n  CN",
+                    "part_number": "5W10V25832",
+                    "network_speed": null,
+                    "esim_support": "Yes",
+                    "physical_sim": "Yes",
+                    "tray_pn": "5M11J01014",
+                    "status": null
+                },
+                {
+                    "module_name": "WIRELESS\n  Wireless, WAN, QTL, EM05 CAT4",
+                    "part_number": "5W10V25794",
+                    "network_speed": null,
+                    "esim_support": "Yes",
+                    "physical_sim": "Yes",
+                    "tray_pn": "5M11J01014",
+                    "status": null
+                },
+                {
+                    "module_name": "WIRELESS\n  Wireless, CMB, FBC, FM350",
+                    "part_number": "5W10V25827",
+                    "network_speed": null,
+                    "esim_support": "Yes",
+                    "physical_sim": "Yes",
+                    "tray_pn": "5M11J01014",
+                    "status": null
+                }
+            ],
+            "sim_slot_type": "Nano-SIM",
+            "has_esim": true,
+            "power_watts": "45W / 65W",
+            "power_connector": "USB-C",
+            "power_pn": "Various (e.g., 5A10W02967 for 65W)",
+            "battery_info": "57Wh p/n 5B10W13975",
+            "expert_notes": "WWAN modules are strictly whitelisted in BIOS; only Lenovo-branded FRUs (Part Numbers) will function. RAM is soldered and cannot be upgraded. Ensure the laptop has pre-installed WWAN antennas if adding a module later, as retrofitting antennas is complex.",
+            "pdf_links": [
+                "(https://psref.lenovo.com/syspool/Sys/PDF/ThinkPad/ThinkPad_X1_Carbon_Gen_10/ThinkPad_X1_Carbon_Gen_10_Spec.pdf)",
+                "Cheked pc",
+                "(https://pcsupport.lenovo.com/id/en/products/laptops-and-netbooks/thinkpad-x-series-laptops/thinkpad-x1-carbon-10th-gen-type-21cb-21cc/21cc/21ccs4ft00/pf49adkc/parts/display/as-built)"
+            ]
         }
     },
     "HP": {
