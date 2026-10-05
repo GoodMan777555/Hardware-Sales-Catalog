@@ -245,6 +245,57 @@
             "pdf_links": [
                 "(http://cdn.cnetcontent.com/ac/f0/acf0444e-f12b-42db-b690-58a0d6c4250f.pdf)"
             ]
+        },
+        "Latitude 5430": {
+            "type": "Laptop",
+            "cpu": "Intel 12th Gen Core (U-series / P-series, up to i7-1270P)",
+            "gpu": "Intel Iris Xe Graphics",
+            "sub_model": "2022 (12th Gen Intel)",
+            "lifecycle": "Available / Current Enterprise",
+            "support_os": "Windows 10/11 Pro, Linux (Ubuntu/RHEL)",
+            "ports": "2x Thunderbolt 4 with DisplayPort Alt Mode/USB Type-C/USB4/Power Delivery, 1x USB 3.2 Gen 1 with PowerShare, 1x USB 3.2 Gen 1, 1x HDMI 2.0, 1x Universal Audio Jack, 1x RJ-45 Ethernet port, 1x wedge-shaped lock slot",
+            "ram_soldered": "No (Upgradable)",
+            "ram_slots": "2",
+            "ram_type": "DDR4 3200 MHz",
+            "ram_max": "64 GB",
+            "storage_slots": "1 x M.2 2230/2280 PCIe Gen 4x4 NVMe SSD",
+            "screen_options": "14.0\" FHD (1920x1080) Non-Touch / Touch, 250nits / 400nits",
+            "webcam": "720p at 30 fps or 1080p at 30 fps FHD + IR camera with Temporal Noise Reduction",
+            "biometrics": "Optional Fingerprint Reader in power button, IR camera for Windows Hello",
+            "weight": "3.01 lb (1.36 kg)",
+            "wifi_bt": "Intel Wi-Fi 6E AX211 (2x2) + Bluetooth 5.2",
+            "security_tpm": "TPM 2.0 Discrete",
+            "has_wwan": true,
+            "wwan_modules": [
+                {
+                    "module_name": "DW5829E LTE Cat16 M.2 Module 4G WWAN ",
+                    "part_number": "03X3VJ",
+                    "network_speed": null,
+                    "esim_support": null,
+                    "physical_sim": "Yes",
+                    "tray_pn": "C2M1W/0C2M1W",
+                    "status": null
+                },
+                {
+                    "module_name": " DW5829E eSIM X20 LTE-A CAT9 Module 450Mbps 4G WWAN ",
+                    "part_number": "0NVCYP",
+                    "network_speed": null,
+                    "esim_support": "Yes",
+                    "physical_sim": null,
+                    "tray_pn": "C2M1W/0C2M1W",
+                    "status": null
+                }
+            ],
+            "sim_slot_type": "Nano-SIM / eSIM",
+            "has_esim": true,
+            "power_watts": "65W / 90W",
+            "power_connector": "USB Type-C",
+            "power_pn": "2YK0FW / 04HWKY",
+            "battery_info": "3-cell 41 Whr or 4-cell 58 Whr Lithium Ion p/n M69D0",
+            "expert_notes": "Units ordered without initial WWAN configuration frequently lack the internal cellular antennas pre-installed in the display assembly. Verify antenna presence before purchasing a standalone WWAN card.\ntest item s/t  3M0FVV3",
+            "pdf_links": [
+                "(https://dl.dell.com/content/manual25345577-latitude-5430-setup-and-specifications.pdf?language=en-us)"
+            ]
         }
     },
     "Lenovo": {
