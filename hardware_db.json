@@ -296,6 +296,38 @@
             "pdf_links": [
                 "(https://dl.dell.com/content/manual25345577-latitude-5430-setup-and-specifications.pdf?language=en-us)"
             ]
+        },
+        "Latitude 7440": {
+            "type": "Laptop",
+            "cpu": "13th Gen Intel Core Raptor Lake U-series & P-series (Core i5-1335U, i5-1345U vPro, i7-1355U, i7-1365U vPro, i5-1350P vPro, i7-1370P vPro)",
+            "gpu": "Intel Iris Xe Graphics (dual-channel configuration) / Intel UHD Graphics (single-channel)",
+            "sub_model": "13th Gen Intel Core (2023) / Model P174G",
+            "lifecycle": "Active / Maintenance",
+            "support_os": "Windows 11 Home/Pro (64-bit), Windows 10 Pro (downgrade rights), Ubuntu Linux 22.04 LTS (64-bit)",
+            "ports": "2x Thunderbolt 4 (USB Type-C) with Power Delivery & DisplayPort 1.4, 2x USB 3.2 Gen 1 Type-A (1 with PowerShare), 1x HDMI 2.0, 1x Universal Audio combo jack (3.5mm), 1x Wedge-shaped security lock slot, 1x External Nano-SIM tray (optional), 1x Smart Card Reader (contacted/contactless NFC, optional)",
+            "ram_soldered": "Yes (Soldered)",
+            "ram_slots": "0 (Soldered on system board)",
+            "ram_type": "LPDDR5 4800 MT/s, dual-channel",
+            "ram_max": "32 GB",
+            "storage_slots": "1x M.2 2230 PCIe NVMe Gen 4 x4 slot (up to 2 TB SSD)",
+            "screen_options": "14.0\" FHD+ (1920x1200) 16:10 Non-Touch IPS AG 250 nits (45% NTSC); 14.0\" FHD+ (1920x1200) Non-Touch IPS AG 400 nits (100% sRGB, Super Low Power, ComfortView Plus); 14.0\" FHD+ (1920x1200) Touch IPS AG 300 nits (72% NTSC); 14.0\" QHD+ (2560x1600) Non-Touch IPS AG 400 nits (100% sRGB, ComfortView Plus)",
+            "webcam": "720p HD RGB camera with privacy shutter / 1080p FHD RGB+IR camera with privacy shutter / 5MP (1920p) RGB+IR MIPI camera with ExpressSign-in and Intelligent Privacy",
+            "biometrics": "Optional Windows Hello IR Facial Recognition; Optional Touch Fingerprint Reader integrated into Power Button",
+            "weight": "Laptop (Magnesium / Ultralight): starting at 1.055 kg (2.33 lbs); Laptop (Aluminum): starting at 1.33 kg (2.93 lbs); 2-in-1: starting at 1.53 kg (3.37 lbs)",
+            "wifi_bt": "Intel Wi-Fi 6E AX211 (802.11ax, 2x2 MU-MIMO) + Bluetooth 5.3",
+            "security_tpm": "TPM 2.0 Discrete (FIPS 140-2 / TCG certified)",
+            "has_wwan": false,
+            "wwan_modules": [],
+            "sim_slot_type": "Nano-SIM / eSIM",
+            "has_esim": false,
+            "power_watts": "60W / 65W / 100W",
+            "power_connector": "USB Type-C",
+            "power_pn": "JRF1C / 0JRF1C (65W), M1W2M / DA65NM190 (65W), 4XYW7 / DA100PM200 (100W)",
+            "battery_info": "p/n WW8N8  2-cell 38 Wh ExpressCharge / 3-cell 57 Wh ExpressCharge (standard and Long Life Cycle options)",
+            "expert_notes": "1. WWAN Retrofit Limitation: Factory WWAN-ready chassis is mandatory. Units ordered without mobile broadband lack antenna leads inside the display lid, Darwin RF brackets, and the SIM cage on the I/O sub-board. 2. Slot Incompatibility: 4G (DW5823e) uses an M.2 3042 Key-B slot, while 5G (DW5931e) utilizes an M.2 3052 Key-B interface and requires unique thermal shielding/pads; modules are not interchangeable between factory 4G and 5G board configurations. 3. Memory Constraint: LPDDR5 RAM is fully soldered to the motherboard; order with 32 GB if memory headroom is needed. 4. Known BIOS/Dock Issue: BIOS versions 1.5.0–1.8.1 caused false 'low wattage adapter' warnings with Dell WD19/WD22 series docks, resolved via BIOS update.\n\nTest item s/t : FP0FDY3",
+            "pdf_links": [
+                "(https://media.dustin.eu/media/d200001001977269/latitude-7440-quickstartguide.pdf)"
+            ]
         }
     },
     "Lenovo": {
